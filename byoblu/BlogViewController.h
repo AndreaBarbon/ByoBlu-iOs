@@ -25,7 +25,6 @@
 @interface BlogViewController : iadControllerPullToRefresh <MWFeedParserDelegate> {
     
     bool            loading;
-    bool            iadPresent;
     NSMutableArray  *dataArray;
     NSMutableArray  *images;
     NSMutableData   *data;

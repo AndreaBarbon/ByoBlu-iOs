@@ -40,7 +40,7 @@
 
     webView = [[UIWebView alloc] initWithFrame:self.view.frame];
     CGRect rect = webView.frame;
-    webView.frame = CGRectMake(rect.origin.x, rect.origin.y-20, rect.size.width, rect.size.height+20);
+    webView.frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
     webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
     webView.delegate = self;
     

@@ -39,7 +39,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     self.view.backgroundColor = [UIColor clearColor];
 
 }
@@ -64,6 +63,12 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    [[[self.view subviews] lastObject] setFrame:self.view.frame];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
     [[[self.view subviews] lastObject] setFrame:self.view.frame];
 
 }

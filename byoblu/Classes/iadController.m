@@ -88,6 +88,14 @@
     else
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
     
+    
+    //[self createAdBannerView];
+
+    if (!iadPresent) {
+        [self.parentViewController.view addSubview:self.adBannerView];
+        iadPresent = 1;
+    }
+    
     //[self adjustBannerView];
 
 }

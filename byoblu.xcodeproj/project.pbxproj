@@ -284,7 +284,6 @@
 		B83180DC152288AF0080D9E7 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8317F19152288AD0080D9E7 /* GTMHTTPUploadFetcher.m */; };
 		B83180DD152288AF0080D9E7 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8317F1B152288AD0080D9E7 /* GTMMIMEDocument.m */; };
 		B83180DE152288AF0080D9E7 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B8317F1D152288AD0080D9E7 /* GTMReadMonitorInputStream.m */; };
-		B83180DF152288AF0080D9E7 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8317F1E152288AD0080D9E7 /* ReleaseNotes.txt */; };
 		B83180E0152288AF0080D9E7 /* gettysburgaddress.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8317F21152288AD0080D9E7 /* gettysburgaddress.txt */; };
 		B83180E1152288AF0080D9E7 /* GTMGatherInputStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8317F22152288AD0080D9E7 /* GTMGatherInputStreamTest.m */; };
 		B83180E2152288AF0080D9E7 /* GTMHTTPFetcherCachingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8317F23152288AD0080D9E7 /* GTMHTTPFetcherCachingTest.m */; };
@@ -4142,7 +4141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8CF717114B6EFEE00D9D7FF /* InfoPlist.strings in Resources */,
-				B83180DF152288AF0080D9E7 /* ReleaseNotes.txt in Resources */,
 				B83180E0152288AF0080D9E7 /* gettysburgaddress.txt in Resources */,
 				B83180EB152288AF0080D9E7 /* UnitTests-Info.plist in Resources */,
 				B8318102152288AF0080D9E7 /* GTMOAuth2Framework-Info.plist in Resources */,

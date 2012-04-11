@@ -13,7 +13,9 @@
 @interface iadControllerPullToRefresh : PullRefreshTableViewController <ADBannerViewDelegate> {
     
     
-    
+    BOOL iadPresent;
+    BOOL up;
+    CGRect contentViewFrame;
     
 }
 

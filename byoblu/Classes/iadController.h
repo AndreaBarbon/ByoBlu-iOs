@@ -12,6 +12,8 @@
 @interface iadController : UIViewController <ADBannerViewDelegate> {
     
     BOOL first;
+    BOOL iadPresent;
+
 }
 
 @property(nonatomic,retain) ADBannerView *adBannerView;

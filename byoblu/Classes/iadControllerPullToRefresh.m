@@ -20,12 +20,12 @@
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner
 {
-    [self adjustBannerView];
+    [self adjustBannerViewAnimated:YES];
 }
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
 {
-    [self adjustBannerView];
+    [self adjustBannerViewAnimated:YES];
 }
 
 - (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
@@ -38,33 +38,46 @@
 }
 
 
-- (void)adjustBannerView
+- (void)adjustBannerViewAnimated:(BOOL)animated
 {
         
-    CGRect contentViewFrame = self.view.frame;
+    contentViewFrame = self.view.frame;
     CGRect parentViewFrame = self.parentViewController.view.frame;
     //CGRect TVFrame = self.tableView.frame;
     CGRect adBannerFrame = self.adBannerView.frame;
+    CGSize bannerSize = [ADBannerView sizeFromBannerContentSizeIdentifier:self.adBannerView.currentContentSizeIdentifier];
     
     if([self.adBannerView isBannerLoaded])
     {
-        CGSize bannerSize = [ADBannerView sizeFromBannerContentSizeIdentifier:self.adBannerView.currentContentSizeIdentifier];
-        contentViewFrame.size.height = contentViewFrame.size.height - bannerSize.height;
-        //TVFrame.size.height = TVFrame.size.height - bannerSize.height;
+        if (up==0) {
+            contentViewFrame.size.height = contentViewFrame.size.height - bannerSize.height;
+            up = 1;
+        }
         adBannerFrame.origin.y = parentViewFrame.size.height - bannerSize.height;
+
     }
     else
     {
-        //CGSize bannerSize = [ADBannerView sizeFromBannerContentSizeIdentifier:self.adBannerView.currentContentSizeIdentifier];
-        //contentViewFrame.size.height = contentViewFrame.size.height + bannerSize.height;
-        //TVFrame.size.height = TVFrame.size.height + bannerSize.height;
+        if (up==1) {
+            contentViewFrame.size.height = contentViewFrame.size.height + bannerSize.height;
+            up = 0;
+        }
+        
         adBannerFrame.origin.y = parentViewFrame.size.height;
     }
     
-    [UIView animateWithDuration:0.4 animations:^{
+    if (!animated) {
+        
         self.adBannerView.frame = adBannerFrame;
         self.view.frame= contentViewFrame;
-    }];
+        
+    } else {
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            self.adBannerView.frame = adBannerFrame;
+            self.view.frame= contentViewFrame;
+        }];
+    }
 
     adBannerView.hidden = NO;
     
@@ -93,18 +106,25 @@
 
 -(void)viewWillAppear:(BOOL)animated {
 
+    up = 0;
+    
     if(UIInterfaceOrientationIsPortrait([self interfaceOrientation]))
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
     else
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
     
-    //[self adjustBannerView];
+    if (!iadPresent) {
+        [self.parentViewController.view addSubview:self.adBannerView];
+        iadPresent = 1;
+    }
+    
+    //[self adjustBannerViewAnimated:NO];
 
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     
-    [self adjustBannerView];
+    [self adjustBannerViewAnimated:YES];
 
 }
 
@@ -132,7 +152,7 @@
     else
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
     
-    [self adjustBannerView];
+    [self adjustBannerViewAnimated:NO];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         
@@ -142,7 +162,7 @@
         if (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
             
             self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
-            [self adjustBannerView];
+            [self adjustBannerViewAnimated:NO];
             return NO;
         };
     }

@@ -306,11 +306,13 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSLog(@"Will appear");
     [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    NSLog(@"Did appear");
     [super viewDidAppear:animated];
 }
 
@@ -547,6 +549,13 @@
     VideoCell *v = (VideoCell*)[self.tableView cellForRowAtIndexPath:indexPath];
     if (!v.selected) {
                 
+        if (up==1) {
+            CGSize bannerSize = [ADBannerView sizeFromBannerContentSizeIdentifier:self.adBannerView.currentContentSizeIdentifier];
+            contentViewFrame.size.height = contentViewFrame.size.height + bannerSize.height;
+            up = 0;
+            self.view.frame= contentViewFrame;
+        }
+        
         YoutubeViewController *controller = [[YoutubeViewController alloc] init];
         controller.view.frame = self.tableView.frame;
         UIWebView *web = [[UIWebView alloc] initWithFrame:controller.view.frame];
@@ -569,6 +578,9 @@
                                                                              target:self
                                                                              action:@selector(share:event:)];
         controller.navigationItem.rightBarButtonItem = btn;
+        
+        [self.adBannerView removeFromSuperview];
+        iadPresent = 0;
         
         [self.navigationController pushViewController:controller animated:YES];
         

@@ -204,12 +204,6 @@
     // e.g. self.myOutlet = nil;
 }
 
--(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
-    
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    [self adjustSize];
-
-}
 
 
 
@@ -295,6 +289,13 @@
 -(void)viewDidAppear:(BOOL)animated {
     
     [self adjustBannerView];
+    
+}
+
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    
+    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+    [self adjustSize];
     
 }
 

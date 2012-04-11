@@ -64,13 +64,13 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="376159923">
-					<string key="IBUITitle">Blog</string>
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="115246739">
-						<string key="IBUITitle">Blog</string>
-						<object class="NSCustomResource" key="IBUIImage">
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="304429708">
+					<string key="IBUITitle">La TV di Byoblu</string>
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="472235332">
+						<string key="IBUITitle">TV</string>
+						<object class="NSCustomResource" key="IBUIImage" id="993499209">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">news.png</string>
+							<string key="NSResourceName">video_item.png</string>
 						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
@@ -82,25 +82,27 @@
 						<int key="IBUIInterfaceOrientation">1</int>
 						<int key="interfaceOrientation">1</int>
 					</object>
+					<bool key="IBUIDefinesPresentationContext">YES</bool>
 					<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="217097436">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="1029952322">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
-						<string key="NSReuseIdentifierKey">_NS:453</string>
+						<string key="NSReuseIdentifierKey">_NS:15</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIBarStyle">1</int>
 					</object>
 					<array class="NSMutableArray" key="IBUIViewControllers">
-						<object class="IBUIViewController" id="972262205">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="66174254">
-								<string key="IBUITitle">Blog</string>
+						<object class="IBUIViewController" id="778873763">
+							<string key="IBUITitle">La TV di Byoblu</string>
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="461216417">
+								<string key="IBUITitle">La TV di Byoblu</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="376159923"/>
+							<reference key="IBUIParentViewController" ref="304429708"/>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
 								<int key="interfaceOrientation">1</int>
@@ -111,15 +113,57 @@
 					</array>
 				</object>
 				<array class="NSMutableArray" key="IBUIViewControllers">
-					<reference ref="376159923"/>
+					<object class="IBUINavigationController" id="376159923">
+						<string key="IBUITitle">Blog</string>
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="115246739">
+							<string key="IBUITitle">Blog</string>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">news.png</string>
+							</object>
+							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						</object>
+						<reference key="IBUIParentViewController" ref="7904794"/>
+						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
+							<int key="IBUIStatusBarStyle">2</int>
+						</object>
+						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+							<int key="IBUIInterfaceOrientation">1</int>
+							<int key="interfaceOrientation">1</int>
+						</object>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<bool key="IBUIHorizontal">NO</bool>
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="217097436">
+							<nil key="NSNextResponder"/>
+							<int key="NSvFlags">256</int>
+							<string key="NSFrameSize">{0, 0}</string>
+							<string key="NSReuseIdentifierKey">_NS:453</string>
+							<bool key="IBUIClipsSubviews">YES</bool>
+							<bool key="IBUIMultipleTouchEnabled">YES</bool>
+							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+							<int key="IBUIBarStyle">1</int>
+						</object>
+						<array class="NSMutableArray" key="IBUIViewControllers">
+							<object class="IBUIViewController" id="972262205">
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="66174254">
+									<string key="IBUITitle">Blog</string>
+									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								</object>
+								<reference key="IBUIParentViewController" ref="376159923"/>
+								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
+									<int key="IBUIInterfaceOrientation">1</int>
+									<int key="interfaceOrientation">1</int>
+								</object>
+								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+								<bool key="IBUIHorizontal">NO</bool>
+							</object>
+						</array>
+					</object>
 					<object class="IBUINavigationController" id="975022843">
 						<string key="IBUITitle">Video</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="252077494">
 							<string key="IBUITitle">Video</string>
-							<object class="NSCustomResource" key="IBUIImage" id="479689115">
-								<string key="NSClassName">NSImage</string>
-								<string key="NSResourceName">video_item.png</string>
-							</object>
+							<reference key="IBUIImage" ref="993499209"/>
 							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="7904794"/>
@@ -159,51 +203,7 @@
 							</object>
 						</array>
 					</object>
-					<object class="IBUINavigationController" id="304429708">
-						<string key="IBUITitle">La TV di Byoblu</string>
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="472235332">
-							<string key="IBUITitle">TV</string>
-							<reference key="IBUIImage" ref="479689115"/>
-							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						</object>
-						<reference key="IBUIParentViewController" ref="7904794"/>
-						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-							<int key="IBUIStatusBarStyle">2</int>
-						</object>
-						<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-							<int key="IBUIInterfaceOrientation">1</int>
-							<int key="interfaceOrientation">1</int>
-						</object>
-						<bool key="IBUIDefinesPresentationContext">YES</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="1029952322">
-							<nil key="NSNextResponder"/>
-							<int key="NSvFlags">256</int>
-							<string key="NSFrameSize">{0, 0}</string>
-							<string key="NSReuseIdentifierKey">_NS:15</string>
-							<bool key="IBUIClipsSubviews">YES</bool>
-							<bool key="IBUIMultipleTouchEnabled">YES</bool>
-							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-							<int key="IBUIBarStyle">1</int>
-						</object>
-						<array class="NSMutableArray" key="IBUIViewControllers">
-							<object class="IBUIViewController" id="778873763">
-								<string key="IBUITitle">La TV di Byoblu</string>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="461216417">
-									<string key="IBUITitle">La TV di Byoblu</string>
-									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								</object>
-								<reference key="IBUIParentViewController" ref="304429708"/>
-								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
-									<int key="IBUIInterfaceOrientation">1</int>
-									<int key="interfaceOrientation">1</int>
-								</object>
-								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-								<bool key="IBUIHorizontal">NO</bool>
-							</object>
-						</array>
-					</object>
+					<reference ref="304429708"/>
 					<object class="IBUINavigationController" id="603553824">
 						<string key="IBUITitle">Chi sono</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="943177559">

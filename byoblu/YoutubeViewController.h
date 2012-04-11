@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iadController.h"
 
 @interface YoutubeViewController : UIViewController
 

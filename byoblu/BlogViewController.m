@@ -51,7 +51,6 @@
     [self createAdBannerView];
     [self.parentViewController.view addSubview:self.adBannerView];
     iadPresent = 1;
-
     
     //Inizilize variables
     listaElementi = [[NSMutableArray alloc] init];
@@ -107,11 +106,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
-    if (!iadPresent) {
-        [self.parentViewController.view addSubview:self.adBannerView];
-        iadPresent = 1;
-    }
+
     [super viewWillAppear:animated];
 }
 
