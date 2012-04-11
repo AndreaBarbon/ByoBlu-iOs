@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="4">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="S9o-jh-Dtc" kind="relationship" relationship="viewControllers" id="gzs-5L-5lm"/>
+                        <segue destination="TZn-MK-naP" kind="relationship" relationship="viewControllers" id="XRL-AG-rip"/>
+                        <segue destination="04b-Z7-nl2" kind="relationship" relationship="viewControllers" id="1s5-og-eve"/>
+                        <segue destination="xdY-hH-V43" kind="relationship" relationship="viewControllers" id="pPH-pm-z9m"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="2023" y="718"/>
+        </scene>
+        <!--Blog View Controller - Blog-->
+        <scene sceneID="VMa-oJ-CuK">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwS-Ob-Ywn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="JKb-7l-8Di" customClass="BlogViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Blog" id="wN2-Vx-Wfn"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4003" y="-527"/>
+        </scene>
+        <!--Navigation Controller - Blog-->
+        <scene sceneID="Ygc-sn-er4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1IT-jv-w9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="S9o-jh-Dtc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Blog" image="news.png" id="rJi-kl-rGj"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="Kur-kl-Pu8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JKb-7l-8Di" kind="relationship" relationship="rootViewController" id="n0p-j6-gi7"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3023" y="-527"/>
+        </scene>
+        <!--Video View Controller - Video-->
+        <scene sceneID="k3j-Jp-Iyh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZiM-wc-4UE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="PHZ-q2-NCz" customClass="VideoViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Video" id="LsO-8u-vjx"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4003" y="718"/>
+        </scene>
+        <!--Navigation Controller - Video-->
+        <scene sceneID="Ys9-cb-SKc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mx0-Lg-27U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="TZn-MK-naP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video" image="video_item.png" id="zQA-BA-iHK"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="nPk-Ag-k7O">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PHZ-q2-NCz" kind="relationship" relationship="rootViewController" id="Gml-bd-sWh"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3023" y="718"/>
+        </scene>
+        <!--Donazioni View Controller - Donazioni-->
+        <scene sceneID="Y4J-x8-Pw3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8Q-NQ-cMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="0pm-aM-LcG" customClass="DonazioniViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Donazioni" id="a2u-cZ-s7k"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3995" y="1962"/>
+        </scene>
+        <!--About View Controller - Claudio Messora-->
+        <scene sceneID="3UJ-54-rgj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYj-Uo-Sdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="VG8-HT-YjW" customClass="AboutViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Claudio Messora" id="fad-eP-2iM"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3995" y="3158"/>
+        </scene>
+        <!--Navigation Controller - Claudio-->
+        <scene sceneID="dF5-0h-6ds">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqq-M7-JwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="04b-Z7-nl2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Claudio" image="Claudio_item.png" id="TQT-Gh-2W5"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="IzX-60-f6r">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VG8-HT-YjW" kind="relationship" relationship="rootViewController" id="mr0-hF-3eQ"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3023" y="3158"/>
+        </scene>
+        <!--Navigation Controller - Donazioni-->
+        <scene sceneID="648-45-1YU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcN-fc-rsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="xdY-hH-V43" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Donazioni" image="donazioni_item.png" id="29J-eq-LMj"/>
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="nIB-BG-SKB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0pm-aM-LcG" kind="relationship" relationship="rootViewController" id="M5C-9U-0IW"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3015" y="1962"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Claudio_item.png" width="32" height="32"/>
+        <image name="donazioni_item.png" width="32" height="32"/>
+        <image name="news.png" width="32" height="32"/>
+        <image name="video_item.png" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

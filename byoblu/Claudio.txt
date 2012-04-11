@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+
+<style>
+h2 {
+  font-family: 'Alfa Slab One', Arial, serif;
+  font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+}
+
+h1,h2,h3,h4,h5,h6,p,blockquote {
+    margin: 0;
+    padding: 0;
+}
+html {
+  background: url('http://dl.dropbox.com/u/1089758/bg.gif') top left repeat;
+}
+body {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h2 {
+    border-bottom: 5px solid #606060;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.title {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #606060;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        margin:10px auto;
+        padding: 20px;
+    }
+}
+
+.container {
+  padding-top: 30px;
+  text-align: justify;
+  overflow: hidden;
+}
+.column {
+  width: 45%;
+  float: left;
+  margin-left: 35px;
+}
+
+ul {list-style-type:circle}
+
+</style>
+<title>Untitled.html</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="title">
+    <h2>Claudio Messora</h2>
+  </div>
+  <div class="column">
+    <p>Mi chiamo Claudio Messora. Sono nato ad Alessandria d'Egitto, da genitori italiani, e ho studiato il pianoforte fin dall'età di cinque anni. Ho compiuto studi scientifici e ho una preparazione informatica maturata alla Statale di Milano.</p>
+
+    <p>  Fino ai 28 anni sono stato principalmente musicista e ho venduto dischi in numerosi paesi del mondo. Poi ho fatto il project manager e l'amministratore delegato in alcuni progetti informatici, cosa che mi ha portato a viaggiare in tutta Europa e a stabilirmi a Dubai per un anno, nel 2005.</p>
+
+    <p>  Tre anni fa ho deciso di aprire, con lo pseudonimo di Byoblu, un videoblog, ovvero un tipo di blog caratterizzato dal video come mezzo di comunicazione principale. Ho iniziato realizzando un mini documentario sulla storia della democrazia e mi sono ritrovato, in un vortice inarrestabile, a seguire sul campo le vicende del terremoto per un anno intero, attività che è stata riconosciuta con il Premio Agenda Rossa e con il XXXI Premio Ischia Internazionale del Giornalismo, nella categoria social media 2010. Le denunce e le testimonianze raccolte sono state anche utilizzate dalla Procura dell'Aquila nell'ambito dell'inchiesta che ha coinvolto la Commissione Grandi Rischi.</p>
+  </div>
+
+  <div class="column">
+    <p>  Per sperimentare i meccanismi di autoproduzione di contenuti che la rete può non solo sostenere, ma anche produrre e consumare, ho realizzato un doppio dvd sul tema della prevedibilità dei terremoti, dal titolo &ldquo;Internet for Giuliani&rdquo;, che mette a confronto diretto i risultati della scienza e le nuove frontiere della ricerca indipendente. Un approfondimento che mi pareva mancare e di cui molte persone mi avevano rappresentato l'esigenza.</p>
+
+    <p>  Le mie posizioni critiche sulle relazioni tra le grandi banche d'affari, la speculazione internazionale e le lobby che hanno portato al rovesciamento del governo italiano e di quello greco, con l'insediamento di Monti e Papademos, hanno suscitato un acceso dibattito che ha travalicato i limiti della rete e che è approdato nei salotti televisivi, dove spesso sono stato invitato a rappresentare le posizioni del mio blog in merito a questa e ad altre questioni.</p>
+
+    <p>  Considero la rete una grande opportunità di cambiamento e ho sempre cercato di difenderla dalle iniziative legislative potenzialmente nefaste, organizzando blitz mediatici di protesta e promuovendo, dove necessario, la proposizione di emendamenti tampone alle cosiddette leggi ammazza-internet.</p>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Links</h2>
+  <ul>
+    <li><a href="http://www.byoblu.com">                        Il mio blog                 </a></li>
+    <li><a href="http://www.facebook.com/informatiecontenti">   La mia pagina Facebook      </a></li>
+    <li><a href="http://www.youtube.com/byoblu">                Il mio canale Youtube       </a></li>
+    <li><a href="http://twitter.com/#!/byoblu">                 Il mio profilo Twitter      </a></li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+
+<style>
+h2 {
+  font-family: 'Alfa Slab One', Arial, serif;
+  font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+}
+
+h1,h2,h3,h4,h5,h6,p,blockquote {
+    margin: 0;
+    padding: 0;
+}
+html {
+  background: url('http://dl.dropbox.com/u/1089758/bg.gif') top left repeat;
+}
+body {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: #737373;
+    margin: 10px 13px 10px 13px;
+}
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h2 {
+    border-bottom: 5px solid #606060;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.title {
+  margin-bottom: 30px;
+  margin-left: 15px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #606060;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 768px) {
+    body {
+        margin:10px auto;
+        padding: 20px;
+    }
+}
+
+.container {
+  padding-top: 30px;
+  text-align: justify;
+  overflow: hidden;
+}
+.column {
+  width: 45%;
+  float: left;
+  margin-left: 35px;
+}
+
+ul {list-style-type:circle}
+
+</style>
+<title>Untitled.html</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="title">
+    <h2>Sostienimi</h2>
+  </div>
+  <div class="column">
+    <p>Byoblu.Com ha vinto il XXXI Premio Ischia Internazionale del Giornalismo Social Media 2010, ed è risultato il quarto blog politico italiano nelle classifiche Wikio.</p>
+
+    <p>Non è il blog di un personaggio politico, non è la vetrina di un uomo di spettacolo e neppure quella di un affermato giornalista. E' solo il frutto del lavoro di un cittadino qualsiasi che usa la rete per fare informazione. Informazione libera da un editore e libera e dalle correnti, al prezzo di un grande impegno quotidiano, di attrezzature molto costose e di ingenti spese.</p>
+
+    <p>Il server dedicato che attualmente ospita questo blog costa 1.600€ all'anno. Un set di microfoni a collare, adeguato al servizio reso, costa 600€. Il kit di illuminazione ne costa altrettanti, una videocamera semiprofessionale costa 1500€ e ce ne vorrebbero più di una. I computer devono avere capacità di elaborazione sufficiente a produrre video di qualità in un tempo ragionevolmente breve: anche loro costano moltissimo. I software per l'editing video, le librerie di effetti e di elaborazione audio costano altre migliaia di euro. Poi le connessione alla rete, sia fissa che mobile. </p>
+  </div>
+
+  <div class="column">
+	<p>Per ogni spostamento per realizzare interviste utili se ne vanno altre centinaia di euro. Poi ci sono i software per fare le dirette streaming (Wirecast costa 400€) e, una volta pagato tutto, restano le normali spese quotidiane, perché curare un blog come questo è un lavoro a tempo pieno che non lascia spazio a niente altro.</p>
+	
+    <p>Per questi motivi il tuo sostegno, mediante una donazione o mediante l'ordine di un prodotto offerto dal blog, può fare la differenza tra andare avanti o lasciar perdere.</p>
+
+    <p>Se vuoi aiutare l'informazione libera, scegli tra una delle modialità disponibili che trovi pubblicate qui a lato. Oppure ordina il doppio DVD "Internet for Giuliani - Quello che la tv non vi dice sui terremoti".</p>
+
+    <p>Ogni piccola offerta è una goccia nel mare unica e preziosa. Grazie.</p>
+  </div>
+</div>
+
+</body>
+</html>

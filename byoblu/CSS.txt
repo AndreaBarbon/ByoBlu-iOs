@@ -1,0 +1,13 @@
+<head>
+<meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+
+<style>
+
+html {
+  background: url('http://dl.dropbox.com/u/1089758/bg.gif') top left repeat;
+}
+
+</style>
+</head>

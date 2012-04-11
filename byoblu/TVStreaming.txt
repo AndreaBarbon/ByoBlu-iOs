@@ -1,0 +1,12 @@
+<head>
+<style>html {background: #000;}</style>
+</head>
+
+<body onload="load();">
+
+
+<iframe scrolling="No" height="%.1f" frameborder="0" width="%.1f" id="player" marginheight="0" marginwidth="0" src="http://byoblu.twww.tv/?eonair|16_9">
+</iframe>
+
+</body>
+
