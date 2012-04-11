@@ -45,9 +45,18 @@
     playView.backgroundColor = [UIColor orangeColor];
     playView.alpha = 0.5;
     
-    float x = webView.frame.size.width-145;
-    float y = webView.frame.size.height-60;
+    float x; 
+    float y; 
     
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+        
+        x = webView.frame.size.width-145;
+        y = webView.frame.size.height-60;
+        
+    }else{  
+        x = webView.frame.size.width;
+        y = webView.frame.size.height;
+    }
     
     NSString *filePath= [[NSBundle mainBundle] pathForResource:@"TVStreaming" ofType:@"txt"];
     s =  [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
