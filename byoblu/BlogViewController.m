@@ -185,7 +185,8 @@
 
     NSString *date = [df stringFromDate:[[listaElementi objectAtIndex:r] date]];
     
-    [cell.title setText:[[listaElementi objectAtIndex:r] title]];
+    NSString *s = [[[listaElementi objectAtIndex:r] title] uppercaseString];
+    [cell.title setText:s];
     [cell.date setText:date];
 
     if ([images count] > r) {
@@ -238,8 +239,11 @@
         }
     
     postViewController.HTMLContent = [[listaElementi objectAtIndex:r] summary];
-    postViewController.navigationItem.title = [[listaElementi objectAtIndex:r] title];
-    NSString *s = [[listaElementi objectAtIndex:r]link];
+    
+    NSString *s = [[[listaElementi objectAtIndex:r] title] lowercaseString];
+    postViewController.navigationItem.title = s;
+    
+    s = [[listaElementi objectAtIndex:r]link];
     postViewController.url =  [NSURL URLWithString:s];
     NSLog(@"Link = %@", postViewController.url);
     

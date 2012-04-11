@@ -36,6 +36,8 @@
     NSString* filePath= [[NSBundle mainBundle] pathForResource:@"Donations" ofType:@"txt"];
     NSString *s = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     [webView loadHTMLString:s baseURL:nil];
+    webView.backgroundColor = [UIColor clearColor];
+    ButtonBG.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
 
     
 }

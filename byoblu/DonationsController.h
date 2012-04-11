@@ -12,6 +12,7 @@
     
     IBOutlet UIWebView *webView;
     IBOutlet UIButton *button;
+    IBOutlet UIView *ButtonBG;
 }
 
 
