@@ -31,7 +31,7 @@
     
     webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     webView.delegate = self;
-    webView.backgroundColor = [UIColor blackColor];
+    //webView.backgroundColor = [UIColor blackColor];
     
     [self.view addSubview:webView];    
     webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
@@ -54,8 +54,13 @@
         y = webView.frame.size.height-60;
         
     }else{  
-        x = webView.frame.size.width;
-        y = webView.frame.size.height;
+        
+        CGRect screenBounds = [[UIScreen mainScreen] bounds];
+        CGFloat screenScale = [[UIScreen mainScreen] scale];
+        CGSize screenSize = CGSizeMake(screenBounds.size.width * screenScale, screenBounds.size.height * screenScale);
+        
+        x = screenSize.width-150;
+        y = screenSize.height;
     }
     
     NSString *filePath= [[NSBundle mainBundle] pathForResource:@"TVStreaming" ofType:@"txt"];
