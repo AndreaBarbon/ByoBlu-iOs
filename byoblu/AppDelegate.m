@@ -16,12 +16,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    //[PayPal initializeWithAppID:@"APP-80W284485P519543T" forEnvironment:ENV_SANDBOX];
 
     
     advertisements = YES;
     TVStreaming = YES;
     
+    
+    if (!TVStreaming) {
+    
+        NSMutableArray* newArray = [NSMutableArray arrayWithArray:self.tabBarController.viewControllers];
+        [newArray removeObjectAtIndex:2];
+        
+        [self.tabBarController setViewControllers:newArray animated:YES];
+    }
+    
+    
+    
+    
+    //[PayPal initializeWithAppID:@"APP-80W284485P519543T" forEnvironment:ENV_SANDBOX];
+
     [self.window addSubview:self.tabBarController.view];
     [self.window makeKeyAndVisible];
 
