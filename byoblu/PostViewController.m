@@ -51,11 +51,6 @@
     NSString *s =  [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     
     self.HTMLContent = [s stringByAppendingString:HTMLContent];
-    
-    
-    //iAd
-    [self createAdBannerView];
-    [self.view addSubview:self.adBannerView];
 
     
     //AddThis settings
@@ -87,6 +82,9 @@
 
     [self adjustSize];
     
+    //iAd
+    [self createAdBannerView];
+    [self.view addSubview:self.adBannerView];
     
     /*
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
@@ -108,7 +106,7 @@
         
        [w stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '150%'"];         
     }
-
+    
 }
 
 -(void)adjustSize {
@@ -132,6 +130,7 @@
     NSString *newWidth = [NSString stringWithFormat:@"width=\"%f\" height=\"%f\"", w, w*9/16];
     
     [webView setFrame:self.view.frame];
+    //up=0;
     
     
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"height=\"(.*?)\""
@@ -161,7 +160,7 @@
     //NSLog(@"%@", HTMLContent);
     [webView loadHTMLString:HTMLContent baseURL:nil];
 
-    [self adjustBannerView];
+    //[self adjustBannerView];
     [self resizeFrame];
     
     
@@ -171,9 +170,17 @@
     
     if([self.adBannerView isBannerLoaded]) {
         
+        if (!up) {
+            CGRect frame =  webView.frame;
+            frame.size.height -= self.adBannerView.frame.size.height;
+            webView.frame = frame;
+            up=YES;
+        }
+    } else if (up) {
         CGRect frame =  webView.frame;
-        frame.size.height -= self.adBannerView.frame.size.height;
+        frame.size.height += self.adBannerView.frame.size.height;
         webView.frame = frame;
+        up=NO;
     }
 }
 
@@ -237,27 +244,41 @@
 - (void)adjustBannerView
 {
     
+    NSLog(@"Adjusting banner");
+    
     CGRect contentViewFrame = self.view.frame;
     CGRect parentViewFrame = self.parentViewController.view.frame;
     CGRect adBannerFrame = self.adBannerView.frame;
+    CGSize bannerSize = [ADBannerView sizeFromBannerContentSizeIdentifier:self.adBannerView.currentContentSizeIdentifier];
+    
     
     if([self.adBannerView isBannerLoaded])
     {
-        CGSize bannerSize = [ADBannerView sizeFromBannerContentSizeIdentifier:self.adBannerView.currentContentSizeIdentifier];
-        adBannerFrame.origin.y = self.tabBarController.view.frame.size.height - bannerSize.height - self.tabBarController.tabBar.frame.size.height;
-        
+//        if (!up) {
+//            contentViewFrame.size.height = contentViewFrame.size.height - bannerSize.height;
+//            up = 1;
+//        }
         adBannerFrame.origin.y = contentViewFrame.size.height - bannerSize.height;
-        contentViewFrame.size.height = contentViewFrame.size.height - bannerSize.height;
+        
     }
     else
     {
-        adBannerFrame.origin.y = parentViewFrame.size.height;
+//        if (up) {
+//            contentViewFrame.size.height = contentViewFrame.size.height + bannerSize.height;
+//            up = NO;
+//        }
         
+        adBannerFrame.origin.y = parentViewFrame.size.height;
     }
     
+        
     [UIView animateWithDuration:0.4 animations:^{
         self.adBannerView.frame = adBannerFrame;
+        self.view.frame= contentViewFrame;
     }];
+    
+    [self resizeFrame];
+
     
     
 }
@@ -268,7 +289,6 @@
     CGRect bannerFrame = self.adBannerView.frame;
     bannerFrame.origin.y = self.view.frame.size.height;
     self.adBannerView.frame = bannerFrame;
-    
     self.adBannerView.delegate = self;
     self.adBannerView.requiredContentSizeIdentifiers = [NSSet setWithObjects:ADBannerContentSizeIdentifierPortrait, ADBannerContentSizeIdentifierLandscape, nil];
 }
@@ -277,6 +297,8 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
+    up = 0;
+
     if(UIInterfaceOrientationIsPortrait([self interfaceOrientation]))
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
     else
@@ -294,6 +316,7 @@
 
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
     
+    up = 0;
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
     [self adjustSize];
     

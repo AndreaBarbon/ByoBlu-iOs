@@ -15,6 +15,9 @@
     IBOutlet UIWebView *webView;
     NSURL *url;
     UIBarButtonItem *btn;
+    
+    BOOL up;
+
 }
 
 @property (nonatomic, retain) NSString *HTMLContent;
