@@ -46,6 +46,7 @@
 				<int key="NSvFlags">292</int>
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:180</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
@@ -72,7 +73,7 @@
 					<string key="IBUITitle">La TV di Byoblu</string>
 					<object class="IBUITabBarItem" key="IBUITabBarItem" id="836283325">
 						<string key="IBUITitle">TV</string>
-						<object class="NSCustomResource" key="IBUIImage" id="323601253">
+						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">video_item.png</string>
 						</object>
@@ -165,7 +166,10 @@
 						<string key="IBUITitle">Video</string>
 						<object class="IBUITabBarItem" key="IBUITabBarItem" id="945148829">
 							<string key="IBUITitle">Video</string>
-							<reference key="IBUIImage" ref="323601253"/>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">YT_item.png</string>
+							</object>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						</object>
 						<reference key="IBUIParentViewController" ref="222514372"/>
@@ -306,6 +310,7 @@
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSNextKeyView"/>
 					<string key="NSReuseIdentifierKey">_NS:475</string>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
@@ -614,6 +619,7 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="Claudio_item.png">{32, 32}</string>
+			<string key="YT_item.png">{32, 32}</string>
 			<string key="donazioni_item.png">{32, 32}</string>
 			<string key="news.png">{32, 32}</string>
 			<string key="video_item.png">{32, 32}</string>

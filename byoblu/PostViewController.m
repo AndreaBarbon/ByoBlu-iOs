@@ -293,7 +293,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
-    up = 0;
+    //up = 0;
 
     if(UIInterfaceOrientationIsPortrait([self interfaceOrientation]))
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
@@ -306,6 +306,8 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     
+    [self adjustSize];
+    up = 0;
     [self adjustBannerView];
     
 }
