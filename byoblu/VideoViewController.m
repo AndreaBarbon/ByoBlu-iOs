@@ -7,6 +7,7 @@
 //
 
 #import "VideoViewController.h"
+#import "AppDelegate.h"
 
 #define CHANNEL @"byoblu"
 
@@ -59,9 +60,13 @@
 {
     [super viewDidLoad];
     
+    
     //iAd
-    [self createAdBannerView];
-    [self.parentViewController.view addSubview:self.adBannerView];
+    if ([(AppDelegate*)[[UIApplication sharedApplication] delegate] advertisements]) {
+        [self createAdBannerView];
+        [self.parentViewController.view addSubview:self.adBannerView];
+        iadPresent = 1;
+    }
     
     
     //AddThis settings

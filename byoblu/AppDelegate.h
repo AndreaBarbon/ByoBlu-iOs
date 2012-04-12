@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate> {
+    
+}
 
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;
 @property (strong, nonatomic) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic) BOOL advertisements;
+@property (nonatomic) BOOL TVStreaming;
+
 
 @end

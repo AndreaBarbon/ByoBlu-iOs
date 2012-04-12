@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Università degli studi di Padova. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "PostViewController.h"
 
 @implementation PostViewController
@@ -30,13 +31,6 @@
 }
 
 #pragma mark - View lifecycle
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
 
 
 -(void)viewDidLoad
@@ -83,8 +77,10 @@
     [self adjustSize];
     
     //iAd
-    [self createAdBannerView];
-    [self.view addSubview:self.adBannerView];
+    if ([(AppDelegate*)[[UIApplication sharedApplication] delegate] advertisements]) {
+        [self createAdBannerView];
+        [self.view addSubview:self.adBannerView];
+    }
     
     /*
     CGRect screenBounds = [[UIScreen mainScreen] bounds];

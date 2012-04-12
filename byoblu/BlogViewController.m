@@ -48,9 +48,12 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
 
     //iAd
-    [self createAdBannerView];
-    [self.parentViewController.view addSubview:self.adBannerView];
-    iadPresent = 1;
+    if ([(AppDelegate*)[[UIApplication sharedApplication] delegate] advertisements]) {
+        [self createAdBannerView];
+        [self.parentViewController.view addSubview:self.adBannerView];
+        iadPresent = 1;
+    }
+
     
     //Inizilize variables
     listaElementi = [[NSMutableArray alloc] init];

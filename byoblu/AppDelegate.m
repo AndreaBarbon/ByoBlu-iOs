@@ -7,22 +7,20 @@
 //
 
 #import "AppDelegate.h"
-#import "PayPal.h"
+//#import "PayPal.h"
 
 @implementation AppDelegate
 
-@synthesize window, tabBarController;
+@synthesize window, tabBarController, advertisements, TVStreaming;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
     //[PayPal initializeWithAppID:@"APP-80W284485P519543T" forEnvironment:ENV_SANDBOX];
 
-    /*
-    if (UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
-        self.window.frame = CGRectMake(0, 0, self.window.frame.size.height, self.window.frame.size.height);
-    }
-    */
+    
+    advertisements = YES;
+    TVStreaming = YES;
     
     [self.window addSubview:self.tabBarController.view];
     [self.window makeKeyAndVisible];

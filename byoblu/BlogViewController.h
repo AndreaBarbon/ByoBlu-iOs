@@ -15,6 +15,7 @@
 #import "BlogCell.h"
 #import "MBProgressHUD.h"
 #import "NSString+HTML.h"
+#import "AppDelegate.h"
 
 
 
