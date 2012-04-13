@@ -47,6 +47,11 @@
     self.HTMLContent = [s stringByAppendingString:HTMLContent];
 
     
+    //Testflight
+    #ifdef TESTING
+    [TestFlight passCheckpoint:[NSString stringWithFormat:@"Post browsed: %@", [url absoluteString]]];
+    #endif
+    
     //AddThis settings
     [AddThisSDK setFacebookAuthenticationMode:ATFacebookAuthenticationTypeDefault];
     [AddThisSDK setFacebookAPIKey:@"314536821917796"];

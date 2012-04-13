@@ -16,6 +16,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
+#ifdef TESTING
+    NSLog(@"Testing mode");
+    [TestFlight takeOff:@"6d8b535259723e3d563e7bc3ff9ce466_NTgyMzEyMDEyLTAxLTMxIDA2OjQ2OjIzLjcyNjE1MA"];
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    [TestFlight passCheckpoint:@"App started!"];
+#endif
+    
 
     
     advertisements = YES;

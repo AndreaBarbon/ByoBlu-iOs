@@ -566,6 +566,11 @@
         UIWebView *web = [[UIWebView alloc] initWithFrame:controller.view.frame];
         NSString *s = [self trova:@"link" numero:r];
         
+        //Testflight
+#ifdef TESTING
+        [TestFlight passCheckpoint:[NSString stringWithFormat:@"Video opened: %@", shareLink]];
+#endif
+         
         shareLink = s;
         s = [s stringByAppendingFormat:@"%f", arc4random()];
         
@@ -588,6 +593,8 @@
         iadPresent = 0;
         
         [self.navigationController pushViewController:controller animated:YES];
+        
+
         
     }
 }

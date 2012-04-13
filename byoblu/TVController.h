@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
 @interface TVController : UIViewController <UIWebViewDelegate> {
     
@@ -17,6 +18,9 @@
     float centerWebView;
     UIView *playView;
     NSString *s;
+    float f;
 }
+
+-(void)reload;
 
 @end
