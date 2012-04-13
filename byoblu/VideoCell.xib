@@ -41,22 +41,6 @@
 						<reference key="NSNextResponder" ref="64877768"/>
 						<int key="NSvFlags">256</int>
 						<array class="NSMutableArray" key="NSSubviews">
-							<object class="IBUIImageView" id="306039278">
-								<reference key="NSNextResponder" ref="417075923"/>
-								<int key="NSvFlags">-2147483356</int>
-								<string key="NSFrameSize">{480, 80}</string>
-								<reference key="NSSuperview" ref="417075923"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="844304989"/>
-								<string key="NSReuseIdentifierKey">_NS:567</string>
-								<float key="IBUIAlpha">0.80000001192092896</float>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<object class="NSCustomResource" key="IBUIImage">
-									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">cell_iPhone.png</string>
-								</object>
-							</object>
 							<object class="IBUITextView" id="1010791471">
 								<reference key="NSNextResponder" ref="417075923"/>
 								<int key="NSvFlags">292</int>
@@ -214,7 +198,7 @@
 						<string key="NSFrameSize">{460, 79}</string>
 						<reference key="NSSuperview" ref="64877768"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="306039278"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:395</string>
 						<reference key="IBUIBackgroundColor" ref="336475815"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -303,7 +287,6 @@
 						<reference key="object" ref="64877768"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="1010791471"/>
-							<reference ref="306039278"/>
 							<reference ref="844304989"/>
 							<reference ref="566637205"/>
 							<reference ref="392722580"/>
@@ -316,11 +299,6 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
 						<reference key="object" ref="1010791471"/>
-						<reference key="parent" ref="64877768"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">10</int>
-						<reference key="object" ref="306039278"/>
 						<reference key="parent" ref="64877768"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -359,7 +337,6 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="17.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="19.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.CustomClassName">VideoCell</string>
@@ -433,7 +410,6 @@
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="Play.png">{75, 75}</string>
 			<string key="YouTubeTV_iPad.png">{186, 154}</string>
-			<string key="cell_iPhone.png">{1024, 180}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1179</string>
 	</data>
