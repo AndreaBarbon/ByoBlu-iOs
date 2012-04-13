@@ -25,9 +25,14 @@
 #endif
     
 
-    
+#ifdef AD
     advertisements = YES;
+#endif 
+    
+#ifdef TV
     TVStreaming = YES;
+#endif     
+    
     
     
     if (!TVStreaming) {
