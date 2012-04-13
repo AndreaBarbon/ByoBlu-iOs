@@ -146,9 +146,446 @@
 		B8C136161522946E00E54901 /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135651522946E00E54901 /* YoutubeViewController.m */; };
 		B8CDB695150BC53600CEB9B3 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB694150BC53600CEB9B3 /* libxml2.2.7.3.dylib */; };
 		B8CDB699150BC54A00CEB9B3 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB698150BC54A00CEB9B3 /* libz.1.2.5.dylib */; };
+		B8CE86721538224400427053 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0ABB1524A128003D7C1B /* TVController.m */; };
+		B8CE86731538224400427053 /* iadControllerPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */; };
+		B8CE86741538224400427053 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DC1522946B00E54901 /* AboutViewController.m */; };
+		B8CE86751538224400427053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DF1522946B00E54901 /* AppDelegate.m */; };
+		B8CE86761538224400427053 /* BlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133E11522946B00E54901 /* BlogCell.m */; };
+		B8CE86771538224400427053 /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133E51522946B00E54901 /* BlogViewController.m */; };
+		B8CE86781538224400427053 /* iadController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133EA1522946B00E54901 /* iadController.m */; };
+		B8CE86791538224400427053 /* DonationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133F21522946B00E54901 /* DonationCell.m */; };
+		B8CE867A1538224400427053 /* DonationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133F71522946B00E54901 /* DonationsController.m */; };
+		B8CE867B1538224400427053 /* DonationsController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133FA1522946B00E54901 /* DonationsController_iPhone.m */; };
+		B8CE867C1538224400427053 /* loadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134031522946B00E54901 /* loadingCell.m */; };
+		B8CE867D1538224400427053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134061522946B00E54901 /* main.m */; };
+		B8CE867E1538224400427053 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1340F1522946B00E54901 /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE867F1538224400427053 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134131522946B00E54901 /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86801538224400427053 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134151522946B00E54901 /* FBLoginDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86811538224400427053 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134171522946B00E54901 /* FBRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86821538224400427053 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341B1522946B00E54901 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86831538224400427053 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341D1522946B00E54901 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86841538224400427053 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341F1522946B00E54901 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86851538224400427053 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134211522946B00E54901 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86861538224400427053 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134231522946B00E54901 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86871538224400427053 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134251522946B00E54901 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86881538224400427053 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134291522946B00E54901 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86891538224400427053 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342B1522946B00E54901 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE868A1538224400427053 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342D1522946B00E54901 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE868B1538224400427053 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342F1522946B00E54901 /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE868C1538224400427053 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134331522946B00E54901 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE868D1538224400427053 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134351522946B00E54901 /* OAAsynchronousDataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE868E1538224400427053 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134371522946B00E54901 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE868F1538224400427053 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134391522946B00E54901 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86901538224400427053 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343B1522946B00E54901 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86911538224400427053 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343D1522946B00E54901 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86921538224400427053 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343F1522946B00E54901 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86931538224400427053 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134411522946B00E54901 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86941538224400427053 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134431522946B00E54901 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86951538224400427053 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134461522946B00E54901 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86961538224400427053 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134491522946B00E54901 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86971538224400427053 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1344C1522946C00E54901 /* MBProgressHUD.m */; };
+		B8CE86981538224400427053 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134511522946C00E54901 /* DetailTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86991538224400427053 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134531522946C00E54901 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE869A1538224400427053 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134551522946C00E54901 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE869B1538224400427053 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134571522946C00E54901 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE869C1538224400427053 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134591522946C00E54901 /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE869D1538224400427053 /* MWFeedParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1345C1522946C00E54901 /* MWFeedParserAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE869E1538224400427053 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1345E1522946C00E54901 /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE869F1538224400427053 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134601522946C00E54901 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A01538224400427053 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134621522946C00E54901 /* NSString+XMLEntities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A11538224400427053 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134641522946C00E54901 /* RootViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A21538224400427053 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134751522946C00E54901 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A31538224400427053 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134771522946C00E54901 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A41538224400427053 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135181522946D00E54901 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A51538224400427053 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351B1522946D00E54901 /* CFilteringJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A61538224400427053 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351D1522946D00E54901 /* CJSONDeserializer_BlocksExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A71538224400427053 /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351F1522946D00E54901 /* CJSONSerialization.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A81538224400427053 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135211522946D00E54901 /* CJSONSerializedData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86A91538224400427053 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135241522946D00E54901 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86AA1538224400427053 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135291522946D00E54901 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86AB1538224400427053 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1352B1522946D00E54901 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86AC1538224400427053 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1352D1522946D00E54901 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86AD1538224400427053 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135331522946E00E54901 /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86AE1538224400427053 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135351522946E00E54901 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86AF1538224400427053 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135371522946E00E54901 /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B01538224400427053 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135391522946E00E54901 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B11538224400427053 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353B1522946E00E54901 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B21538224400427053 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353D1522946E00E54901 /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B31538224400427053 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353F1522946E00E54901 /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B41538224400427053 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135411522946E00E54901 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B51538224400427053 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135431522946E00E54901 /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B61538224400427053 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135451522946E00E54901 /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B71538224400427053 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135471522946E00E54901 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B81538224400427053 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135491522946E00E54901 /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86B91538224400427053 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1354C1522946E00E54901 /* CTidy.m */; };
+		B8CE86BA1538224400427053 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135261522946D00E54901 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8CE86BB1538224400427053 /* PayPalDonationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1354F1522946E00E54901 /* PayPalDonationController.m */; };
+		B8CE86BC1538224400427053 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355B1522946E00E54901 /* PostViewController.m */; };
+		B8CE86BD1538224400427053 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355D1522946E00E54901 /* SecondViewController.m */; };
+		B8CE86BE1538224400427053 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355F1522946E00E54901 /* VideoCell.m */; };
+		B8CE86BF1538224400427053 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135631522946E00E54901 /* VideoViewController.m */; };
+		B8CE86C01538224400427053 /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135651522946E00E54901 /* YoutubeViewController.m */; };
+		B8CE86C21538224400427053 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B825FCAF1522721D0063CA0C /* iAd.framework */; };
+		B8CE86C31538224400427053 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB698150BC54A00CEB9B3 /* libz.1.2.5.dylib */; };
+		B8CE86C41538224400427053 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB694150BC53600CEB9B3 /* libxml2.2.7.3.dylib */; };
+		B8CE86C51538224400427053 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8570A4414DC2D6600358D22 /* QuartzCore.framework */; };
+		B8CE86C61538224400427053 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8386CFA14C8CC9100BF9F58 /* CoreData.framework */; };
+		B8CE86C71538224400427053 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B80E14C497EB001E5202 /* MessageUI.framework */; };
+		B8CE86C81538224400427053 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B80F14C497EB001E5202 /* Security.framework */; };
+		B8CE86C91538224400427053 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B81014C497EB001E5202 /* SystemConfiguration.framework */; };
+		B8CE86CA1538224400427053 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713A14B6EFED00D9D7FF /* UIKit.framework */; };
+		B8CE86CB1538224400427053 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713C14B6EFED00D9D7FF /* Foundation.framework */; };
+		B8CE86CC1538224400427053 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713E14B6EFED00D9D7FF /* CoreGraphics.framework */; };
+		B8CE86CD1538224400427053 /* libAddThis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C1340B1522946B00E54901 /* libAddThis.a */; };
+		B8CE86CE1538224400427053 /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C134661522946C00E54901 /* libPayPalMPL.a */; };
+		B8CE86D01538224400427053 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83FBE1D14D80A9700E2388C /* Entitlements.plist */; };
+		B8CE86D11538224400427053 /* BlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E21522946B00E54901 /* BlogCell.xib */; };
+		B8CE86D21538224400427053 /* BlogCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E31522946B00E54901 /* BlogCell_iPad.xib */; };
+		B8CE86D31538224400427053 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EB1522946B00E54901 /* MainWindow.xib */; };
+		B8CE86D41538224400427053 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EC1522946B00E54901 /* MainWindow_iPad.xib */; };
+		B8CE86D51538224400427053 /* Claudio.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EF1522946B00E54901 /* Claudio.txt */; };
+		B8CE86D61538224400427053 /* CSS.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F01522946B00E54901 /* CSS.txt */; };
+		B8CE86D71538224400427053 /* donationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F31522946B00E54901 /* donationCell.xib */; };
+		B8CE86D81538224400427053 /* donationCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F41522946B00E54901 /* donationCell_iPad.xib */; };
+		B8CE86D91538224400427053 /* Donations.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F51522946B00E54901 /* Donations.txt */; };
+		B8CE86DA1538224400427053 /* DonationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F81522946B00E54901 /* DonationsController.xib */; };
+		B8CE86DB1538224400427053 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
+		B8CE86DC1538224400427053 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
+		B8CE86DD1538224400427053 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
+		B8CE86DE1538224400427053 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
+		B8CE86DF1538224400427053 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
+		B8CE86E01538224400427053 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
+		B8CE86E11538224400427053 /* ATResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C1340A1522946B00E54901 /* ATResources.bundle */; };
+		B8CE86E21538224400427053 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C134111522946B00E54901 /* FBDialog.bundle */; };
+		B8CE86E31538224400427053 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C134731522946C00E54901 /* blackArrow.png */; };
+		B8CE86E41538224400427053 /* PayPalDonationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135501522946E00E54901 /* PayPalDonationController.xib */; };
+		B8CE86E51538224400427053 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135531522946E00E54901 /* bg.png */; };
+		B8CE86E61538224400427053 /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135541522946E00E54901 /* icon_iPad.png */; };
+		B8CE86E71538224400427053 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135551522946E00E54901 /* news.png */; };
+		B8CE86E81538224400427053 /* news@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135561522946E00E54901 /* news@2x.png */; };
+		B8CE86E91538224400427053 /* PostView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135591522946E00E54901 /* PostView_iPad.xib */; };
+		B8CE86EA1538224400427053 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135601522946E00E54901 /* VideoCell.xib */; };
+		B8CE86EB1538224400427053 /* VideoCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135611522946E00E54901 /* VideoCell_iPad.xib */; };
+		B8CE86EC1538224400427053 /* TVStreaming.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8A513811529BC7F00869FB2 /* TVStreaming.txt */; };
+		B8CE86ED1538224400427053 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E48152DC0C100771045 /* Icon-72.png */; };
+		B8CE86EE1538224400427053 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E49152DC0C100771045 /* icon.png */; };
+		B8CE86EF1538224400427053 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857415362E910032022E /* Default-Landscape~ipad.png */; };
+		B8CE86F01538224400427053 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857615362E9B0032022E /* Default-Portrait~ipad.png */; };
+		B8CE86F11538224400427053 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857815362EA40032022E /* Default.png */; };
+		B8CE86F21538224400427053 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857A15362EA90032022E /* Default@2x.png */; };
+		B8CE86F31538224400427053 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857D15362F780032022E /* Default-Portrait@2x~ipad.png */; };
+		B8CE86F41538224400427053 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857F15362F7E0032022E /* Default-Landscape@2x~ipad.png */; };
+		B8CE86F51538224400427053 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = B8498581153630FC0032022E /* Icon-144.png */; };
+		B8CE86F61538224400427053 /* YouTubeTV_iPad@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985831536337C0032022E /* YouTubeTV_iPad@2x~ipad.png */; };
+		B8CE86F71538224400427053 /* Claudio_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985851536344B0032022E /* Claudio_item@2x.png */; };
+		B8CE86F81538224400427053 /* donazioni_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985861536344B0032022E /* donazioni_item@2x.png */; };
+		B8CE86F91538224400427053 /* video_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985871536344B0032022E /* video_item@2x.png */; };
+		B8CE86FA1538224400427053 /* refresh_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858B15363A730032022E /* refresh_icon@2x.png */; };
+		B8CE86FB1538224400427053 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858D1536F47F0032022E /* bg@2x.png */; };
+		B8CE86FC1538224400427053 /* YT_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858F1536F7A40032022E /* YT_item.png */; };
+		B8CE86FD1538224400427053 /* YT_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985901536F7A40032022E /* YT_item@2x.png */; };
+		B8CE86FE1538224400427053 /* Claudio_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985941536F8190032022E /* Claudio_item.png */; };
+		B8CE86FF1538224400427053 /* donazioni_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985951536F8190032022E /* donazioni_item.png */; };
+		B8CE87001538224400427053 /* video_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985961536F8190032022E /* video_item.png */; };
+		B8CE87011538224400427053 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B879E969153709E90085308A /* icon@2x.png */; };
+		B8CE870E1538226800427053 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CE870A1538226800427053 /* libTestFlight.a */; };
+		B8CE870F1538226800427053 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8CE870B1538226800427053 /* README.txt */; };
+		B8CE87101538226800427053 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8CE870C1538226800427053 /* release_notes.txt */; };
+		B8CE871715382DFC00427053 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871615382DFC00427053 /* Play.png */; };
+		B8CE871815382DFC00427053 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871615382DFC00427053 /* Play.png */; };
+		B8CE871915382DFC00427053 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871615382DFC00427053 /* Play.png */; };
+		B8CE871A15382DFC00427053 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871615382DFC00427053 /* Play.png */; };
+		B8CE871C15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
+		B8CE871D15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
+		B8CE871E15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
+		B8CE871F15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
 		B8CF713B14B6EFED00D9D7FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713A14B6EFED00D9D7FF /* UIKit.framework */; };
 		B8CF713D14B6EFED00D9D7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713C14B6EFED00D9D7FF /* Foundation.framework */; };
 		B8CF713F14B6EFED00D9D7FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713E14B6EFED00D9D7FF /* CoreGraphics.framework */; };
+		B8E1B02E15380B8F0040F7B9 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0ABB1524A128003D7C1B /* TVController.m */; };
+		B8E1B02F15380B8F0040F7B9 /* iadControllerPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */; };
+		B8E1B03015380B8F0040F7B9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DC1522946B00E54901 /* AboutViewController.m */; };
+		B8E1B03115380B8F0040F7B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DF1522946B00E54901 /* AppDelegate.m */; };
+		B8E1B03215380B8F0040F7B9 /* BlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133E11522946B00E54901 /* BlogCell.m */; };
+		B8E1B03315380B8F0040F7B9 /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133E51522946B00E54901 /* BlogViewController.m */; };
+		B8E1B03415380B8F0040F7B9 /* iadController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133EA1522946B00E54901 /* iadController.m */; };
+		B8E1B03515380B8F0040F7B9 /* DonationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133F21522946B00E54901 /* DonationCell.m */; };
+		B8E1B03615380B8F0040F7B9 /* DonationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133F71522946B00E54901 /* DonationsController.m */; };
+		B8E1B03715380B8F0040F7B9 /* DonationsController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133FA1522946B00E54901 /* DonationsController_iPhone.m */; };
+		B8E1B03815380B8F0040F7B9 /* loadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134031522946B00E54901 /* loadingCell.m */; };
+		B8E1B03915380B8F0040F7B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134061522946B00E54901 /* main.m */; };
+		B8E1B03A15380B8F0040F7B9 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1340F1522946B00E54901 /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B03B15380B8F0040F7B9 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134131522946B00E54901 /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B03C15380B8F0040F7B9 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134151522946B00E54901 /* FBLoginDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B03D15380B8F0040F7B9 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134171522946B00E54901 /* FBRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B03E15380B8F0040F7B9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341B1522946B00E54901 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B03F15380B8F0040F7B9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341D1522946B00E54901 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04015380B8F0040F7B9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341F1522946B00E54901 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04115380B8F0040F7B9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134211522946B00E54901 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04215380B8F0040F7B9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134231522946B00E54901 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04315380B8F0040F7B9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134251522946B00E54901 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04415380B8F0040F7B9 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134291522946B00E54901 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04515380B8F0040F7B9 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342B1522946B00E54901 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04615380B8F0040F7B9 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342D1522946B00E54901 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04715380B8F0040F7B9 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342F1522946B00E54901 /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04815380B8F0040F7B9 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134331522946B00E54901 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04915380B8F0040F7B9 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134351522946B00E54901 /* OAAsynchronousDataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04A15380B8F0040F7B9 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134371522946B00E54901 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04B15380B8F0040F7B9 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134391522946B00E54901 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04C15380B8F0040F7B9 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343B1522946B00E54901 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04D15380B8F0040F7B9 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343D1522946B00E54901 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04E15380B8F0040F7B9 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343F1522946B00E54901 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B04F15380B8F0040F7B9 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134411522946B00E54901 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05015380B8F0040F7B9 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134431522946B00E54901 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05115380B8F0040F7B9 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134461522946B00E54901 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05215380B8F0040F7B9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134491522946B00E54901 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05315380B8F0040F7B9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1344C1522946C00E54901 /* MBProgressHUD.m */; };
+		B8E1B05415380B8F0040F7B9 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134511522946C00E54901 /* DetailTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05515380B8F0040F7B9 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134531522946C00E54901 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05615380B8F0040F7B9 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134551522946C00E54901 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05715380B8F0040F7B9 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134571522946C00E54901 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05815380B8F0040F7B9 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134591522946C00E54901 /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05915380B8F0040F7B9 /* MWFeedParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1345C1522946C00E54901 /* MWFeedParserAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05A15380B8F0040F7B9 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1345E1522946C00E54901 /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05B15380B8F0040F7B9 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134601522946C00E54901 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05C15380B8F0040F7B9 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134621522946C00E54901 /* NSString+XMLEntities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05D15380B8F0040F7B9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134641522946C00E54901 /* RootViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05E15380B8F0040F7B9 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134751522946C00E54901 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B05F15380B8F0040F7B9 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134771522946C00E54901 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06015380B8F0040F7B9 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135181522946D00E54901 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06115380B8F0040F7B9 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351B1522946D00E54901 /* CFilteringJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06215380B8F0040F7B9 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351D1522946D00E54901 /* CJSONDeserializer_BlocksExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06315380B8F0040F7B9 /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351F1522946D00E54901 /* CJSONSerialization.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06415380B8F0040F7B9 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135211522946D00E54901 /* CJSONSerializedData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06515380B8F0040F7B9 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135241522946D00E54901 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06615380B8F0040F7B9 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135291522946D00E54901 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06715380B8F0040F7B9 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1352B1522946D00E54901 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06815380B8F0040F7B9 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1352D1522946D00E54901 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06915380B8F0040F7B9 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135331522946E00E54901 /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06A15380B8F0040F7B9 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135351522946E00E54901 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06B15380B8F0040F7B9 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135371522946E00E54901 /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06C15380B8F0040F7B9 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135391522946E00E54901 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06D15380B8F0040F7B9 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353B1522946E00E54901 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06E15380B8F0040F7B9 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353D1522946E00E54901 /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B06F15380B8F0040F7B9 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353F1522946E00E54901 /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07015380B8F0040F7B9 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135411522946E00E54901 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07115380B8F0040F7B9 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135431522946E00E54901 /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07215380B8F0040F7B9 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135451522946E00E54901 /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07315380B8F0040F7B9 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135471522946E00E54901 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07415380B8F0040F7B9 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135491522946E00E54901 /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07515380B8F0040F7B9 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1354C1522946E00E54901 /* CTidy.m */; };
+		B8E1B07615380B8F0040F7B9 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135261522946D00E54901 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B07715380B8F0040F7B9 /* PayPalDonationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1354F1522946E00E54901 /* PayPalDonationController.m */; };
+		B8E1B07815380B8F0040F7B9 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355B1522946E00E54901 /* PostViewController.m */; };
+		B8E1B07915380B8F0040F7B9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355D1522946E00E54901 /* SecondViewController.m */; };
+		B8E1B07A15380B8F0040F7B9 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355F1522946E00E54901 /* VideoCell.m */; };
+		B8E1B07B15380B8F0040F7B9 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135631522946E00E54901 /* VideoViewController.m */; };
+		B8E1B07C15380B8F0040F7B9 /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135651522946E00E54901 /* YoutubeViewController.m */; };
+		B8E1B07E15380B8F0040F7B9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B825FCAF1522721D0063CA0C /* iAd.framework */; };
+		B8E1B07F15380B8F0040F7B9 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB698150BC54A00CEB9B3 /* libz.1.2.5.dylib */; };
+		B8E1B08015380B8F0040F7B9 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB694150BC53600CEB9B3 /* libxml2.2.7.3.dylib */; };
+		B8E1B08115380B8F0040F7B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8570A4414DC2D6600358D22 /* QuartzCore.framework */; };
+		B8E1B08215380B8F0040F7B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8386CFA14C8CC9100BF9F58 /* CoreData.framework */; };
+		B8E1B08315380B8F0040F7B9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B80E14C497EB001E5202 /* MessageUI.framework */; };
+		B8E1B08415380B8F0040F7B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B80F14C497EB001E5202 /* Security.framework */; };
+		B8E1B08515380B8F0040F7B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B81014C497EB001E5202 /* SystemConfiguration.framework */; };
+		B8E1B08615380B8F0040F7B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713A14B6EFED00D9D7FF /* UIKit.framework */; };
+		B8E1B08715380B8F0040F7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713C14B6EFED00D9D7FF /* Foundation.framework */; };
+		B8E1B08815380B8F0040F7B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713E14B6EFED00D9D7FF /* CoreGraphics.framework */; };
+		B8E1B08915380B8F0040F7B9 /* libAddThis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C1340B1522946B00E54901 /* libAddThis.a */; };
+		B8E1B08A15380B8F0040F7B9 /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C134661522946C00E54901 /* libPayPalMPL.a */; };
+		B8E1B08C15380B8F0040F7B9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83FBE1D14D80A9700E2388C /* Entitlements.plist */; };
+		B8E1B08D15380B8F0040F7B9 /* BlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E21522946B00E54901 /* BlogCell.xib */; };
+		B8E1B08E15380B8F0040F7B9 /* BlogCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E31522946B00E54901 /* BlogCell_iPad.xib */; };
+		B8E1B08F15380B8F0040F7B9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EB1522946B00E54901 /* MainWindow.xib */; };
+		B8E1B09015380B8F0040F7B9 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EC1522946B00E54901 /* MainWindow_iPad.xib */; };
+		B8E1B09115380B8F0040F7B9 /* Claudio.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EF1522946B00E54901 /* Claudio.txt */; };
+		B8E1B09215380B8F0040F7B9 /* CSS.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F01522946B00E54901 /* CSS.txt */; };
+		B8E1B09315380B8F0040F7B9 /* donationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F31522946B00E54901 /* donationCell.xib */; };
+		B8E1B09415380B8F0040F7B9 /* donationCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F41522946B00E54901 /* donationCell_iPad.xib */; };
+		B8E1B09515380B8F0040F7B9 /* Donations.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F51522946B00E54901 /* Donations.txt */; };
+		B8E1B09615380B8F0040F7B9 /* DonationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F81522946B00E54901 /* DonationsController.xib */; };
+		B8E1B09715380B8F0040F7B9 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
+		B8E1B09815380B8F0040F7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
+		B8E1B09915380B8F0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
+		B8E1B09A15380B8F0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
+		B8E1B09B15380B8F0040F7B9 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
+		B8E1B09C15380B8F0040F7B9 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
+		B8E1B09D15380B8F0040F7B9 /* ATResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C1340A1522946B00E54901 /* ATResources.bundle */; };
+		B8E1B09E15380B8F0040F7B9 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C134111522946B00E54901 /* FBDialog.bundle */; };
+		B8E1B09F15380B8F0040F7B9 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C134731522946C00E54901 /* blackArrow.png */; };
+		B8E1B0A015380B8F0040F7B9 /* PayPalDonationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135501522946E00E54901 /* PayPalDonationController.xib */; };
+		B8E1B0A115380B8F0040F7B9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135531522946E00E54901 /* bg.png */; };
+		B8E1B0A215380B8F0040F7B9 /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135541522946E00E54901 /* icon_iPad.png */; };
+		B8E1B0A315380B8F0040F7B9 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135551522946E00E54901 /* news.png */; };
+		B8E1B0A415380B8F0040F7B9 /* news@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135561522946E00E54901 /* news@2x.png */; };
+		B8E1B0A515380B8F0040F7B9 /* PostView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135591522946E00E54901 /* PostView_iPad.xib */; };
+		B8E1B0A615380B8F0040F7B9 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135601522946E00E54901 /* VideoCell.xib */; };
+		B8E1B0A715380B8F0040F7B9 /* VideoCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135611522946E00E54901 /* VideoCell_iPad.xib */; };
+		B8E1B0A815380B8F0040F7B9 /* TVStreaming.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8A513811529BC7F00869FB2 /* TVStreaming.txt */; };
+		B8E1B0A915380B8F0040F7B9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E48152DC0C100771045 /* Icon-72.png */; };
+		B8E1B0AA15380B8F0040F7B9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E49152DC0C100771045 /* icon.png */; };
+		B8E1B0AB15380B8F0040F7B9 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857415362E910032022E /* Default-Landscape~ipad.png */; };
+		B8E1B0AC15380B8F0040F7B9 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857615362E9B0032022E /* Default-Portrait~ipad.png */; };
+		B8E1B0AD15380B8F0040F7B9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857815362EA40032022E /* Default.png */; };
+		B8E1B0AE15380B8F0040F7B9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857A15362EA90032022E /* Default@2x.png */; };
+		B8E1B0AF15380B8F0040F7B9 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857D15362F780032022E /* Default-Portrait@2x~ipad.png */; };
+		B8E1B0B015380B8F0040F7B9 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857F15362F7E0032022E /* Default-Landscape@2x~ipad.png */; };
+		B8E1B0B115380B8F0040F7B9 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = B8498581153630FC0032022E /* Icon-144.png */; };
+		B8E1B0B215380B8F0040F7B9 /* YouTubeTV_iPad@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985831536337C0032022E /* YouTubeTV_iPad@2x~ipad.png */; };
+		B8E1B0B315380B8F0040F7B9 /* Claudio_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985851536344B0032022E /* Claudio_item@2x.png */; };
+		B8E1B0B415380B8F0040F7B9 /* donazioni_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985861536344B0032022E /* donazioni_item@2x.png */; };
+		B8E1B0B515380B8F0040F7B9 /* video_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985871536344B0032022E /* video_item@2x.png */; };
+		B8E1B0B615380B8F0040F7B9 /* refresh_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858B15363A730032022E /* refresh_icon@2x.png */; };
+		B8E1B0B715380B8F0040F7B9 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858D1536F47F0032022E /* bg@2x.png */; };
+		B8E1B0B815380B8F0040F7B9 /* YT_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858F1536F7A40032022E /* YT_item.png */; };
+		B8E1B0B915380B8F0040F7B9 /* YT_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985901536F7A40032022E /* YT_item@2x.png */; };
+		B8E1B0BA15380B8F0040F7B9 /* Claudio_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985941536F8190032022E /* Claudio_item.png */; };
+		B8E1B0BB15380B8F0040F7B9 /* donazioni_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985951536F8190032022E /* donazioni_item.png */; };
+		B8E1B0BC15380B8F0040F7B9 /* video_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985961536F8190032022E /* video_item.png */; };
+		B8E1B0BD15380B8F0040F7B9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B879E969153709E90085308A /* icon@2x.png */; };
+		B8E1B0C715380BAE0040F7B9 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0ABB1524A128003D7C1B /* TVController.m */; };
+		B8E1B0C815380BAE0040F7B9 /* iadControllerPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */; };
+		B8E1B0C915380BAE0040F7B9 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DC1522946B00E54901 /* AboutViewController.m */; };
+		B8E1B0CA15380BAE0040F7B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DF1522946B00E54901 /* AppDelegate.m */; };
+		B8E1B0CB15380BAE0040F7B9 /* BlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133E11522946B00E54901 /* BlogCell.m */; };
+		B8E1B0CC15380BAE0040F7B9 /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133E51522946B00E54901 /* BlogViewController.m */; };
+		B8E1B0CD15380BAE0040F7B9 /* iadController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133EA1522946B00E54901 /* iadController.m */; };
+		B8E1B0CE15380BAE0040F7B9 /* DonationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133F21522946B00E54901 /* DonationCell.m */; };
+		B8E1B0CF15380BAE0040F7B9 /* DonationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133F71522946B00E54901 /* DonationsController.m */; };
+		B8E1B0D015380BAE0040F7B9 /* DonationsController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133FA1522946B00E54901 /* DonationsController_iPhone.m */; };
+		B8E1B0D115380BAE0040F7B9 /* loadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134031522946B00E54901 /* loadingCell.m */; };
+		B8E1B0D215380BAE0040F7B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134061522946B00E54901 /* main.m */; };
+		B8E1B0D315380BAE0040F7B9 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1340F1522946B00E54901 /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0D415380BAE0040F7B9 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134131522946B00E54901 /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0D515380BAE0040F7B9 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134151522946B00E54901 /* FBLoginDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0D615380BAE0040F7B9 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134171522946B00E54901 /* FBRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0D715380BAE0040F7B9 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341B1522946B00E54901 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0D815380BAE0040F7B9 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341D1522946B00E54901 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0D915380BAE0040F7B9 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1341F1522946B00E54901 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0DA15380BAE0040F7B9 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134211522946B00E54901 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0DB15380BAE0040F7B9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134231522946B00E54901 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0DC15380BAE0040F7B9 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134251522946B00E54901 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0DD15380BAE0040F7B9 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134291522946B00E54901 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0DE15380BAE0040F7B9 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342B1522946B00E54901 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0DF15380BAE0040F7B9 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342D1522946B00E54901 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E015380BAE0040F7B9 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C1342F1522946B00E54901 /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E115380BAE0040F7B9 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134331522946B00E54901 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E215380BAE0040F7B9 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134351522946B00E54901 /* OAAsynchronousDataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E315380BAE0040F7B9 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134371522946B00E54901 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E415380BAE0040F7B9 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134391522946B00E54901 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E515380BAE0040F7B9 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343B1522946B00E54901 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E615380BAE0040F7B9 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343D1522946B00E54901 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E715380BAE0040F7B9 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1343F1522946B00E54901 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E815380BAE0040F7B9 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134411522946B00E54901 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0E915380BAE0040F7B9 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134431522946B00E54901 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0EA15380BAE0040F7B9 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134461522946B00E54901 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0EB15380BAE0040F7B9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134491522946B00E54901 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0EC15380BAE0040F7B9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1344C1522946C00E54901 /* MBProgressHUD.m */; };
+		B8E1B0ED15380BAE0040F7B9 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134511522946C00E54901 /* DetailTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0EE15380BAE0040F7B9 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134531522946C00E54901 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0EF15380BAE0040F7B9 /* MWFeedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134551522946C00E54901 /* MWFeedInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F015380BAE0040F7B9 /* MWFeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134571522946C00E54901 /* MWFeedItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F115380BAE0040F7B9 /* MWFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134591522946C00E54901 /* MWFeedParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F215380BAE0040F7B9 /* MWFeedParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1345C1522946C00E54901 /* MWFeedParserAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F315380BAE0040F7B9 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1345E1522946C00E54901 /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F415380BAE0040F7B9 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134601522946C00E54901 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F515380BAE0040F7B9 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134621522946C00E54901 /* NSString+XMLEntities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F615380BAE0040F7B9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134641522946C00E54901 /* RootViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F715380BAE0040F7B9 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134751522946C00E54901 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F815380BAE0040F7B9 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134771522946C00E54901 /* PullRefreshTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0F915380BAE0040F7B9 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135181522946D00E54901 /* CDataScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0FA15380BAE0040F7B9 /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351B1522946D00E54901 /* CFilteringJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0FB15380BAE0040F7B9 /* CJSONDeserializer_BlocksExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351D1522946D00E54901 /* CJSONDeserializer_BlocksExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0FC15380BAE0040F7B9 /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1351F1522946D00E54901 /* CJSONSerialization.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0FD15380BAE0040F7B9 /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135211522946D00E54901 /* CJSONSerializedData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0FE15380BAE0040F7B9 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135241522946D00E54901 /* CDataScanner_Extensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B0FF15380BAE0040F7B9 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135291522946D00E54901 /* CJSONDeserializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10015380BAE0040F7B9 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1352B1522946D00E54901 /* CJSONScanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10115380BAE0040F7B9 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1352D1522946D00E54901 /* CJSONSerializer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10215380BAE0040F7B9 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135331522946E00E54901 /* CXMLDocument_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10315380BAE0040F7B9 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135351522946E00E54901 /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10415380BAE0040F7B9 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135371522946E00E54901 /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10515380BAE0040F7B9 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135391522946E00E54901 /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10615380BAE0040F7B9 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353B1522946E00E54901 /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10715380BAE0040F7B9 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353D1522946E00E54901 /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10815380BAE0040F7B9 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1353F1522946E00E54901 /* CXMLElement_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10915380BAE0040F7B9 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135411522946E00E54901 /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10A15380BAE0040F7B9 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135431522946E00E54901 /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10B15380BAE0040F7B9 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135451522946E00E54901 /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10C15380BAE0040F7B9 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135471522946E00E54901 /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10D15380BAE0040F7B9 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135491522946E00E54901 /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B10E15380BAE0040F7B9 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1354C1522946E00E54901 /* CTidy.m */; };
+		B8E1B10F15380BAE0040F7B9 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135261522946D00E54901 /* NSDictionary_JSONExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B8E1B11015380BAE0040F7B9 /* PayPalDonationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1354F1522946E00E54901 /* PayPalDonationController.m */; };
+		B8E1B11115380BAE0040F7B9 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355B1522946E00E54901 /* PostViewController.m */; };
+		B8E1B11215380BAE0040F7B9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355D1522946E00E54901 /* SecondViewController.m */; };
+		B8E1B11315380BAE0040F7B9 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C1355F1522946E00E54901 /* VideoCell.m */; };
+		B8E1B11415380BAE0040F7B9 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135631522946E00E54901 /* VideoViewController.m */; };
+		B8E1B11515380BAE0040F7B9 /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C135651522946E00E54901 /* YoutubeViewController.m */; };
+		B8E1B11715380BAE0040F7B9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B825FCAF1522721D0063CA0C /* iAd.framework */; };
+		B8E1B11815380BAE0040F7B9 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB698150BC54A00CEB9B3 /* libz.1.2.5.dylib */; };
+		B8E1B11915380BAE0040F7B9 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CDB694150BC53600CEB9B3 /* libxml2.2.7.3.dylib */; };
+		B8E1B11A15380BAE0040F7B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8570A4414DC2D6600358D22 /* QuartzCore.framework */; };
+		B8E1B11B15380BAE0040F7B9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8386CFA14C8CC9100BF9F58 /* CoreData.framework */; };
+		B8E1B11C15380BAE0040F7B9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B80E14C497EB001E5202 /* MessageUI.framework */; };
+		B8E1B11D15380BAE0040F7B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B80F14C497EB001E5202 /* Security.framework */; };
+		B8E1B11E15380BAE0040F7B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B826B81014C497EB001E5202 /* SystemConfiguration.framework */; };
+		B8E1B11F15380BAE0040F7B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713A14B6EFED00D9D7FF /* UIKit.framework */; };
+		B8E1B12015380BAE0040F7B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713C14B6EFED00D9D7FF /* Foundation.framework */; };
+		B8E1B12115380BAE0040F7B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713E14B6EFED00D9D7FF /* CoreGraphics.framework */; };
+		B8E1B12215380BAE0040F7B9 /* libAddThis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C1340B1522946B00E54901 /* libAddThis.a */; };
+		B8E1B12315380BAE0040F7B9 /* libPayPalMPL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C134661522946C00E54901 /* libPayPalMPL.a */; };
+		B8E1B12515380BAE0040F7B9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83FBE1D14D80A9700E2388C /* Entitlements.plist */; };
+		B8E1B12615380BAE0040F7B9 /* BlogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E21522946B00E54901 /* BlogCell.xib */; };
+		B8E1B12715380BAE0040F7B9 /* BlogCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E31522946B00E54901 /* BlogCell_iPad.xib */; };
+		B8E1B12815380BAE0040F7B9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EB1522946B00E54901 /* MainWindow.xib */; };
+		B8E1B12915380BAE0040F7B9 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EC1522946B00E54901 /* MainWindow_iPad.xib */; };
+		B8E1B12A15380BAE0040F7B9 /* Claudio.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133EF1522946B00E54901 /* Claudio.txt */; };
+		B8E1B12B15380BAE0040F7B9 /* CSS.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F01522946B00E54901 /* CSS.txt */; };
+		B8E1B12C15380BAE0040F7B9 /* donationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F31522946B00E54901 /* donationCell.xib */; };
+		B8E1B12D15380BAE0040F7B9 /* donationCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F41522946B00E54901 /* donationCell_iPad.xib */; };
+		B8E1B12E15380BAE0040F7B9 /* Donations.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F51522946B00E54901 /* Donations.txt */; };
+		B8E1B12F15380BAE0040F7B9 /* DonationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F81522946B00E54901 /* DonationsController.xib */; };
+		B8E1B13015380BAE0040F7B9 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
+		B8E1B13115380BAE0040F7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
+		B8E1B13215380BAE0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
+		B8E1B13315380BAE0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
+		B8E1B13415380BAE0040F7B9 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
+		B8E1B13515380BAE0040F7B9 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
+		B8E1B13615380BAE0040F7B9 /* ATResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C1340A1522946B00E54901 /* ATResources.bundle */; };
+		B8E1B13715380BAE0040F7B9 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C134111522946B00E54901 /* FBDialog.bundle */; };
+		B8E1B13815380BAE0040F7B9 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C134731522946C00E54901 /* blackArrow.png */; };
+		B8E1B13915380BAE0040F7B9 /* PayPalDonationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135501522946E00E54901 /* PayPalDonationController.xib */; };
+		B8E1B13A15380BAE0040F7B9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135531522946E00E54901 /* bg.png */; };
+		B8E1B13B15380BAE0040F7B9 /* icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135541522946E00E54901 /* icon_iPad.png */; };
+		B8E1B13C15380BAE0040F7B9 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135551522946E00E54901 /* news.png */; };
+		B8E1B13D15380BAE0040F7B9 /* news@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8C135561522946E00E54901 /* news@2x.png */; };
+		B8E1B13E15380BAE0040F7B9 /* PostView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135591522946E00E54901 /* PostView_iPad.xib */; };
+		B8E1B13F15380BAE0040F7B9 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135601522946E00E54901 /* VideoCell.xib */; };
+		B8E1B14015380BAE0040F7B9 /* VideoCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C135611522946E00E54901 /* VideoCell_iPad.xib */; };
+		B8E1B14115380BAE0040F7B9 /* TVStreaming.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8A513811529BC7F00869FB2 /* TVStreaming.txt */; };
+		B8E1B14215380BAE0040F7B9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E48152DC0C100771045 /* Icon-72.png */; };
+		B8E1B14315380BAE0040F7B9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E49152DC0C100771045 /* icon.png */; };
+		B8E1B14415380BAE0040F7B9 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857415362E910032022E /* Default-Landscape~ipad.png */; };
+		B8E1B14515380BAE0040F7B9 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857615362E9B0032022E /* Default-Portrait~ipad.png */; };
+		B8E1B14615380BAE0040F7B9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857815362EA40032022E /* Default.png */; };
+		B8E1B14715380BAE0040F7B9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857A15362EA90032022E /* Default@2x.png */; };
+		B8E1B14815380BAE0040F7B9 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857D15362F780032022E /* Default-Portrait@2x~ipad.png */; };
+		B8E1B14915380BAE0040F7B9 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B849857F15362F7E0032022E /* Default-Landscape@2x~ipad.png */; };
+		B8E1B14A15380BAE0040F7B9 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = B8498581153630FC0032022E /* Icon-144.png */; };
+		B8E1B14B15380BAE0040F7B9 /* YouTubeTV_iPad@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985831536337C0032022E /* YouTubeTV_iPad@2x~ipad.png */; };
+		B8E1B14C15380BAE0040F7B9 /* Claudio_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985851536344B0032022E /* Claudio_item@2x.png */; };
+		B8E1B14D15380BAE0040F7B9 /* donazioni_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985861536344B0032022E /* donazioni_item@2x.png */; };
+		B8E1B14E15380BAE0040F7B9 /* video_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985871536344B0032022E /* video_item@2x.png */; };
+		B8E1B14F15380BAE0040F7B9 /* refresh_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858B15363A730032022E /* refresh_icon@2x.png */; };
+		B8E1B15015380BAE0040F7B9 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858D1536F47F0032022E /* bg@2x.png */; };
+		B8E1B15115380BAE0040F7B9 /* YT_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B849858F1536F7A40032022E /* YT_item.png */; };
+		B8E1B15215380BAE0040F7B9 /* YT_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985901536F7A40032022E /* YT_item@2x.png */; };
+		B8E1B15315380BAE0040F7B9 /* Claudio_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985941536F8190032022E /* Claudio_item.png */; };
+		B8E1B15415380BAE0040F7B9 /* donazioni_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985951536F8190032022E /* donazioni_item.png */; };
+		B8E1B15515380BAE0040F7B9 /* video_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985961536F8190032022E /* video_item.png */; };
+		B8E1B15615380BAE0040F7B9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B879E969153709E90085308A /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1394,6 +1831,17 @@
 		B8CDB694150BC53600CEB9B3 /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
 		B8CDB696150BC53D00CEB9B3 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		B8CDB698150BC54A00CEB9B3 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		B8CE87061538224400427053 /* byoblu test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "byoblu test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8CE87081538224500427053 /* byoblu copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "byoblu copy2-Info.plist"; path = "/Users/abramo/Documents/iPhone apps/Byoblu/byobluu/byoblu copy2-Info.plist"; sourceTree = "<absolute>"; };
+		B8CE870A1538226800427053 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		B8CE870B1538226800427053 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		B8CE870C1538226800427053 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		B8CE870D1538226800427053 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		B8CE87121538234700427053 /* byoblu-test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "byoblu-test-Prefix.pch"; sourceTree = "<group>"; };
+		B8CE871315382A2400427053 /* byoblu-editor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "byoblu-editor-Prefix.pch"; sourceTree = "<group>"; };
+		B8CE871415382A2400427053 /* byoblu-pro-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "byoblu-pro-Prefix.pch"; sourceTree = "<group>"; };
+		B8CE871615382DFC00427053 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		B8CE871B15382F0400427053 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
 		B8CF713614B6EFED00D9D7FF /* byoblu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = byoblu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF713A14B6EFED00D9D7FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8CF713C14B6EFED00D9D7FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1403,6 +1851,10 @@
 		B8CF717014B6EFEE00D9D7FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8CF717214B6EFEE00D9D7FF /* byobluTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byobluTests.h; sourceTree = "<group>"; };
 		B8CF717314B6EFEE00D9D7FF /* byobluTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = byobluTests.m; sourceTree = "<group>"; };
+		B8E1B0C215380B8F0040F7B9 /* byoblu Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "byoblu Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E1B0C415380B900040F7B9 /* byoblu copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "byoblu copy-Info.plist"; path = "/Users/abramo/Documents/iPhone apps/Byoblu/byobluu/byoblu copy-Info.plist"; sourceTree = "<absolute>"; };
+		B8E1B15B15380BAE0040F7B9 /* byoblu Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "byoblu Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E1B15D15380BAF0040F7B9 /* byoblu Pro copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "byoblu Pro copy-Info.plist"; path = "/Users/abramo/Documents/iPhone apps/Byoblu/byobluu/byoblu Pro copy-Info.plist"; sourceTree = "<absolute>"; };
 		B8FE0AAB15230319003D7C1B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "byoblu/open Frameworks/MBProgressHUD.m"; sourceTree = SOURCE_ROOT; };
 		B8FE0AAC15230319003D7C1B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "byoblu/open Frameworks/MBProgressHUD.h"; sourceTree = SOURCE_ROOT; };
 		B8FE0ABA1524A128003D7C1B /* TVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVController.h; sourceTree = "<group>"; };
@@ -1410,6 +1862,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B8CE86C11538224400427053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CE86C21538224400427053 /* iAd.framework in Frameworks */,
+				B8CE86C31538224400427053 /* libz.1.2.5.dylib in Frameworks */,
+				B8CE86C41538224400427053 /* libxml2.2.7.3.dylib in Frameworks */,
+				B8CE86C51538224400427053 /* QuartzCore.framework in Frameworks */,
+				B8CE86C61538224400427053 /* CoreData.framework in Frameworks */,
+				B8CE86C71538224400427053 /* MessageUI.framework in Frameworks */,
+				B8CE86C81538224400427053 /* Security.framework in Frameworks */,
+				B8CE86C91538224400427053 /* SystemConfiguration.framework in Frameworks */,
+				B8CE86CA1538224400427053 /* UIKit.framework in Frameworks */,
+				B8CE86CB1538224400427053 /* Foundation.framework in Frameworks */,
+				B8CE86CC1538224400427053 /* CoreGraphics.framework in Frameworks */,
+				B8CE86CD1538224400427053 /* libAddThis.a in Frameworks */,
+				B8CE86CE1538224400427053 /* libPayPalMPL.a in Frameworks */,
+				B8CE870E1538226800427053 /* libTestFlight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8CF713314B6EFED00D9D7FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1427,6 +1900,46 @@
 				B8CF713F14B6EFED00D9D7FF /* CoreGraphics.framework in Frameworks */,
 				B8C135841522946E00E54901 /* libAddThis.a in Frameworks */,
 				B8C135AB1522946E00E54901 /* libPayPalMPL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E1B07D15380B8F0040F7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E1B07E15380B8F0040F7B9 /* iAd.framework in Frameworks */,
+				B8E1B07F15380B8F0040F7B9 /* libz.1.2.5.dylib in Frameworks */,
+				B8E1B08015380B8F0040F7B9 /* libxml2.2.7.3.dylib in Frameworks */,
+				B8E1B08115380B8F0040F7B9 /* QuartzCore.framework in Frameworks */,
+				B8E1B08215380B8F0040F7B9 /* CoreData.framework in Frameworks */,
+				B8E1B08315380B8F0040F7B9 /* MessageUI.framework in Frameworks */,
+				B8E1B08415380B8F0040F7B9 /* Security.framework in Frameworks */,
+				B8E1B08515380B8F0040F7B9 /* SystemConfiguration.framework in Frameworks */,
+				B8E1B08615380B8F0040F7B9 /* UIKit.framework in Frameworks */,
+				B8E1B08715380B8F0040F7B9 /* Foundation.framework in Frameworks */,
+				B8E1B08815380B8F0040F7B9 /* CoreGraphics.framework in Frameworks */,
+				B8E1B08915380B8F0040F7B9 /* libAddThis.a in Frameworks */,
+				B8E1B08A15380B8F0040F7B9 /* libPayPalMPL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E1B11615380BAE0040F7B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E1B11715380BAE0040F7B9 /* iAd.framework in Frameworks */,
+				B8E1B11815380BAE0040F7B9 /* libz.1.2.5.dylib in Frameworks */,
+				B8E1B11915380BAE0040F7B9 /* libxml2.2.7.3.dylib in Frameworks */,
+				B8E1B11A15380BAE0040F7B9 /* QuartzCore.framework in Frameworks */,
+				B8E1B11B15380BAE0040F7B9 /* CoreData.framework in Frameworks */,
+				B8E1B11C15380BAE0040F7B9 /* MessageUI.framework in Frameworks */,
+				B8E1B11D15380BAE0040F7B9 /* Security.framework in Frameworks */,
+				B8E1B11E15380BAE0040F7B9 /* SystemConfiguration.framework in Frameworks */,
+				B8E1B11F15380BAE0040F7B9 /* UIKit.framework in Frameworks */,
+				B8E1B12015380BAE0040F7B9 /* Foundation.framework in Frameworks */,
+				B8E1B12115380BAE0040F7B9 /* CoreGraphics.framework in Frameworks */,
+				B8E1B12215380BAE0040F7B9 /* libAddThis.a in Frameworks */,
+				B8E1B12315380BAE0040F7B9 /* libPayPalMPL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2492,6 +3005,7 @@
 		B8C133DA1522946B00E54901 /* byoblu */ = {
 			isa = PBXGroup;
 			children = (
+				B8CE871515382A3100427053 /* Prefix */,
 				B8B60E4C152DC3B000771045 /* Cells */,
 				B8C133E81522946B00E54901 /* Classes */,
 				B8C134071522946B00E54901 /* open Frameworks */,
@@ -2506,7 +3020,6 @@
 				B8C133E41522946B00E54901 /* BlogViewController.h */,
 				B8C133E51522946B00E54901 /* BlogViewController.m */,
 				B8C133E61522946B00E54901 /* byoblu-Info.plist */,
-				B8C133E71522946B00E54901 /* byoblu-Prefix.pch */,
 				B8C133EF1522946B00E54901 /* Claudio.txt */,
 				B8C133F01522946B00E54901 /* CSS.txt */,
 				B8C133F51522946B00E54901 /* Donations.txt */,
@@ -2552,6 +3065,7 @@
 		B8C134071522946B00E54901 /* open Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8CE87091538226800427053 /* TestFlightSDK1.0 */,
 				B8C134081522946B00E54901 /* AddThis */,
 				B8C1344A1522946C00E54901 /* GDataAnalytics.h */,
 				B8C1344B1522946C00E54901 /* MBProgressHUD.h */,
@@ -3226,6 +3740,8 @@
 				B849858D1536F47F0032022E /* bg@2x.png */,
 				B849858B15363A730032022E /* refresh_icon@2x.png */,
 				B84985831536337C0032022E /* YouTubeTV_iPad@2x~ipad.png */,
+				B8CE871615382DFC00427053 /* Play.png */,
+				B8CE871B15382F0400427053 /* Play@2x.png */,
 			);
 			path = PNGs;
 			sourceTree = "<group>";
@@ -3519,6 +4035,28 @@
 			path = Tidy;
 			sourceTree = "<group>";
 		};
+		B8CE87091538226800427053 /* TestFlightSDK1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				B8CE870A1538226800427053 /* libTestFlight.a */,
+				B8CE870B1538226800427053 /* README.txt */,
+				B8CE870C1538226800427053 /* release_notes.txt */,
+				B8CE870D1538226800427053 /* TestFlight.h */,
+			);
+			path = TestFlightSDK1.0;
+			sourceTree = "<group>";
+		};
+		B8CE871515382A3100427053 /* Prefix */ = {
+			isa = PBXGroup;
+			children = (
+				B8CE87121538234700427053 /* byoblu-test-Prefix.pch */,
+				B8C133E71522946B00E54901 /* byoblu-Prefix.pch */,
+				B8CE871415382A2400427053 /* byoblu-pro-Prefix.pch */,
+				B8CE871315382A2400427053 /* byoblu-editor-Prefix.pch */,
+			);
+			name = Prefix;
+			sourceTree = "<group>";
+		};
 		B8CF712B14B6EFEC00D9D7FF = {
 			isa = PBXGroup;
 			children = (
@@ -3531,6 +4069,9 @@
 				B8CF716C14B6EFEE00D9D7FF /* byobluTests */,
 				B8CF713914B6EFED00D9D7FF /* Frameworks */,
 				B8CF713714B6EFED00D9D7FF /* Products */,
+				B8E1B0C415380B900040F7B9 /* byoblu copy-Info.plist */,
+				B8E1B15D15380BAF0040F7B9 /* byoblu Pro copy-Info.plist */,
+				B8CE87081538224500427053 /* byoblu copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3538,6 +4079,9 @@
 			isa = PBXGroup;
 			children = (
 				B8CF713614B6EFED00D9D7FF /* byoblu.app */,
+				B8E1B0C215380B8F0040F7B9 /* byoblu Pro.app */,
+				B8E1B15B15380BAE0040F7B9 /* byoblu Editor.app */,
+				B8CE87061538224400427053 /* byoblu test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3582,6 +4126,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B8CE86701538224400427053 /* byoblu test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8CE87021538224400427053 /* Build configuration list for PBXNativeTarget "byoblu test" */;
+			buildPhases = (
+				B8CE86711538224400427053 /* Sources */,
+				B8CE86C11538224400427053 /* Frameworks */,
+				B8CE86CF1538224400427053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "byoblu test";
+			productName = byoblu;
+			productReference = B8CE87061538224400427053 /* byoblu test.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B8CF713514B6EFED00D9D7FF /* byoblu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8CF717714B6EFEE00D9D7FF /* Build configuration list for PBXNativeTarget "byoblu" */;
@@ -3597,6 +4158,40 @@
 			name = byoblu;
 			productName = byoblu;
 			productReference = B8CF713614B6EFED00D9D7FF /* byoblu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8E1B02C15380B8F0040F7B9 /* byoblu Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E1B0BE15380B8F0040F7B9 /* Build configuration list for PBXNativeTarget "byoblu Pro" */;
+			buildPhases = (
+				B8E1B02D15380B8F0040F7B9 /* Sources */,
+				B8E1B07D15380B8F0040F7B9 /* Frameworks */,
+				B8E1B08B15380B8F0040F7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "byoblu Pro";
+			productName = byoblu;
+			productReference = B8E1B0C215380B8F0040F7B9 /* byoblu Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8E1B0C515380BAE0040F7B9 /* byoblu Editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E1B15715380BAE0040F7B9 /* Build configuration list for PBXNativeTarget "byoblu Editor" */;
+			buildPhases = (
+				B8E1B0C615380BAE0040F7B9 /* Sources */,
+				B8E1B11615380BAE0040F7B9 /* Frameworks */,
+				B8E1B12415380BAE0040F7B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "byoblu Editor";
+			productName = byoblu;
+			productReference = B8E1B15B15380BAE0040F7B9 /* byoblu Editor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -3636,7 +4231,10 @@
 			);
 			projectRoot = "";
 			targets = (
+				B8CE86701538224400427053 /* byoblu test */,
 				B8CF713514B6EFED00D9D7FF /* byoblu */,
+				B8E1B02C15380B8F0040F7B9 /* byoblu Pro */,
+				B8E1B0C515380BAE0040F7B9 /* byoblu Editor */,
 			);
 		};
 /* End PBXProject section */
@@ -3680,6 +4278,67 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B8CE86CF1538224400427053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CE86D01538224400427053 /* Entitlements.plist in Resources */,
+				B8CE86D11538224400427053 /* BlogCell.xib in Resources */,
+				B8CE86D21538224400427053 /* BlogCell_iPad.xib in Resources */,
+				B8CE86D31538224400427053 /* MainWindow.xib in Resources */,
+				B8CE86D41538224400427053 /* MainWindow_iPad.xib in Resources */,
+				B8CE86D51538224400427053 /* Claudio.txt in Resources */,
+				B8CE86D61538224400427053 /* CSS.txt in Resources */,
+				B8CE86D71538224400427053 /* donationCell.xib in Resources */,
+				B8CE86D81538224400427053 /* donationCell_iPad.xib in Resources */,
+				B8CE86D91538224400427053 /* Donations.txt in Resources */,
+				B8CE86DA1538224400427053 /* DonationsController.xib in Resources */,
+				B8CE86DB1538224400427053 /* DonationsController_iPhone.xib in Resources */,
+				B8CE86DC1538224400427053 /* InfoPlist.strings in Resources */,
+				B8CE86DD1538224400427053 /* MainStoryboard_iPad.storyboard in Resources */,
+				B8CE86DE1538224400427053 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B8CE86DF1538224400427053 /* loadingCell.xib in Resources */,
+				B8CE86E01538224400427053 /* loadingCell_iPad.xib in Resources */,
+				B8CE86E11538224400427053 /* ATResources.bundle in Resources */,
+				B8CE86E21538224400427053 /* FBDialog.bundle in Resources */,
+				B8CE86E31538224400427053 /* blackArrow.png in Resources */,
+				B8CE86E41538224400427053 /* PayPalDonationController.xib in Resources */,
+				B8CE86E51538224400427053 /* bg.png in Resources */,
+				B8CE86E61538224400427053 /* icon_iPad.png in Resources */,
+				B8CE86E71538224400427053 /* news.png in Resources */,
+				B8CE86E81538224400427053 /* news@2x.png in Resources */,
+				B8CE86E91538224400427053 /* PostView_iPad.xib in Resources */,
+				B8CE86EA1538224400427053 /* VideoCell.xib in Resources */,
+				B8CE86EB1538224400427053 /* VideoCell_iPad.xib in Resources */,
+				B8CE86EC1538224400427053 /* TVStreaming.txt in Resources */,
+				B8CE86ED1538224400427053 /* Icon-72.png in Resources */,
+				B8CE86EE1538224400427053 /* icon.png in Resources */,
+				B8CE86EF1538224400427053 /* Default-Landscape~ipad.png in Resources */,
+				B8CE86F01538224400427053 /* Default-Portrait~ipad.png in Resources */,
+				B8CE86F11538224400427053 /* Default.png in Resources */,
+				B8CE86F21538224400427053 /* Default@2x.png in Resources */,
+				B8CE86F31538224400427053 /* Default-Portrait@2x~ipad.png in Resources */,
+				B8CE86F41538224400427053 /* Default-Landscape@2x~ipad.png in Resources */,
+				B8CE86F51538224400427053 /* Icon-144.png in Resources */,
+				B8CE86F61538224400427053 /* YouTubeTV_iPad@2x~ipad.png in Resources */,
+				B8CE86F71538224400427053 /* Claudio_item@2x.png in Resources */,
+				B8CE86F81538224400427053 /* donazioni_item@2x.png in Resources */,
+				B8CE86F91538224400427053 /* video_item@2x.png in Resources */,
+				B8CE86FA1538224400427053 /* refresh_icon@2x.png in Resources */,
+				B8CE86FB1538224400427053 /* bg@2x.png in Resources */,
+				B8CE86FC1538224400427053 /* YT_item.png in Resources */,
+				B8CE86FD1538224400427053 /* YT_item@2x.png in Resources */,
+				B8CE86FE1538224400427053 /* Claudio_item.png in Resources */,
+				B8CE86FF1538224400427053 /* donazioni_item.png in Resources */,
+				B8CE87001538224400427053 /* video_item.png in Resources */,
+				B8CE87011538224400427053 /* icon@2x.png in Resources */,
+				B8CE870F1538226800427053 /* README.txt in Resources */,
+				B8CE87101538226800427053 /* release_notes.txt in Resources */,
+				B8CE871715382DFC00427053 /* Play.png in Resources */,
+				B8CE871C15382F0400427053 /* Play@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8CF713414B6EFED00D9D7FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3734,12 +4393,218 @@
 				B84985981536F8190032022E /* donazioni_item.png in Resources */,
 				B84985991536F8190032022E /* video_item.png in Resources */,
 				B879E96A153709E90085308A /* icon@2x.png in Resources */,
+				B8CE871815382DFC00427053 /* Play.png in Resources */,
+				B8CE871D15382F0400427053 /* Play@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E1B08B15380B8F0040F7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E1B08C15380B8F0040F7B9 /* Entitlements.plist in Resources */,
+				B8E1B08D15380B8F0040F7B9 /* BlogCell.xib in Resources */,
+				B8E1B08E15380B8F0040F7B9 /* BlogCell_iPad.xib in Resources */,
+				B8E1B08F15380B8F0040F7B9 /* MainWindow.xib in Resources */,
+				B8E1B09015380B8F0040F7B9 /* MainWindow_iPad.xib in Resources */,
+				B8E1B09115380B8F0040F7B9 /* Claudio.txt in Resources */,
+				B8E1B09215380B8F0040F7B9 /* CSS.txt in Resources */,
+				B8E1B09315380B8F0040F7B9 /* donationCell.xib in Resources */,
+				B8E1B09415380B8F0040F7B9 /* donationCell_iPad.xib in Resources */,
+				B8E1B09515380B8F0040F7B9 /* Donations.txt in Resources */,
+				B8E1B09615380B8F0040F7B9 /* DonationsController.xib in Resources */,
+				B8E1B09715380B8F0040F7B9 /* DonationsController_iPhone.xib in Resources */,
+				B8E1B09815380B8F0040F7B9 /* InfoPlist.strings in Resources */,
+				B8E1B09915380B8F0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */,
+				B8E1B09A15380B8F0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B8E1B09B15380B8F0040F7B9 /* loadingCell.xib in Resources */,
+				B8E1B09C15380B8F0040F7B9 /* loadingCell_iPad.xib in Resources */,
+				B8E1B09D15380B8F0040F7B9 /* ATResources.bundle in Resources */,
+				B8E1B09E15380B8F0040F7B9 /* FBDialog.bundle in Resources */,
+				B8E1B09F15380B8F0040F7B9 /* blackArrow.png in Resources */,
+				B8E1B0A015380B8F0040F7B9 /* PayPalDonationController.xib in Resources */,
+				B8E1B0A115380B8F0040F7B9 /* bg.png in Resources */,
+				B8E1B0A215380B8F0040F7B9 /* icon_iPad.png in Resources */,
+				B8E1B0A315380B8F0040F7B9 /* news.png in Resources */,
+				B8E1B0A415380B8F0040F7B9 /* news@2x.png in Resources */,
+				B8E1B0A515380B8F0040F7B9 /* PostView_iPad.xib in Resources */,
+				B8E1B0A615380B8F0040F7B9 /* VideoCell.xib in Resources */,
+				B8E1B0A715380B8F0040F7B9 /* VideoCell_iPad.xib in Resources */,
+				B8E1B0A815380B8F0040F7B9 /* TVStreaming.txt in Resources */,
+				B8E1B0A915380B8F0040F7B9 /* Icon-72.png in Resources */,
+				B8E1B0AA15380B8F0040F7B9 /* icon.png in Resources */,
+				B8E1B0AB15380B8F0040F7B9 /* Default-Landscape~ipad.png in Resources */,
+				B8E1B0AC15380B8F0040F7B9 /* Default-Portrait~ipad.png in Resources */,
+				B8E1B0AD15380B8F0040F7B9 /* Default.png in Resources */,
+				B8E1B0AE15380B8F0040F7B9 /* Default@2x.png in Resources */,
+				B8E1B0AF15380B8F0040F7B9 /* Default-Portrait@2x~ipad.png in Resources */,
+				B8E1B0B015380B8F0040F7B9 /* Default-Landscape@2x~ipad.png in Resources */,
+				B8E1B0B115380B8F0040F7B9 /* Icon-144.png in Resources */,
+				B8E1B0B215380B8F0040F7B9 /* YouTubeTV_iPad@2x~ipad.png in Resources */,
+				B8E1B0B315380B8F0040F7B9 /* Claudio_item@2x.png in Resources */,
+				B8E1B0B415380B8F0040F7B9 /* donazioni_item@2x.png in Resources */,
+				B8E1B0B515380B8F0040F7B9 /* video_item@2x.png in Resources */,
+				B8E1B0B615380B8F0040F7B9 /* refresh_icon@2x.png in Resources */,
+				B8E1B0B715380B8F0040F7B9 /* bg@2x.png in Resources */,
+				B8E1B0B815380B8F0040F7B9 /* YT_item.png in Resources */,
+				B8E1B0B915380B8F0040F7B9 /* YT_item@2x.png in Resources */,
+				B8E1B0BA15380B8F0040F7B9 /* Claudio_item.png in Resources */,
+				B8E1B0BB15380B8F0040F7B9 /* donazioni_item.png in Resources */,
+				B8E1B0BC15380B8F0040F7B9 /* video_item.png in Resources */,
+				B8E1B0BD15380B8F0040F7B9 /* icon@2x.png in Resources */,
+				B8CE871915382DFC00427053 /* Play.png in Resources */,
+				B8CE871E15382F0400427053 /* Play@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E1B12415380BAE0040F7B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E1B12515380BAE0040F7B9 /* Entitlements.plist in Resources */,
+				B8E1B12615380BAE0040F7B9 /* BlogCell.xib in Resources */,
+				B8E1B12715380BAE0040F7B9 /* BlogCell_iPad.xib in Resources */,
+				B8E1B12815380BAE0040F7B9 /* MainWindow.xib in Resources */,
+				B8E1B12915380BAE0040F7B9 /* MainWindow_iPad.xib in Resources */,
+				B8E1B12A15380BAE0040F7B9 /* Claudio.txt in Resources */,
+				B8E1B12B15380BAE0040F7B9 /* CSS.txt in Resources */,
+				B8E1B12C15380BAE0040F7B9 /* donationCell.xib in Resources */,
+				B8E1B12D15380BAE0040F7B9 /* donationCell_iPad.xib in Resources */,
+				B8E1B12E15380BAE0040F7B9 /* Donations.txt in Resources */,
+				B8E1B12F15380BAE0040F7B9 /* DonationsController.xib in Resources */,
+				B8E1B13015380BAE0040F7B9 /* DonationsController_iPhone.xib in Resources */,
+				B8E1B13115380BAE0040F7B9 /* InfoPlist.strings in Resources */,
+				B8E1B13215380BAE0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */,
+				B8E1B13315380BAE0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B8E1B13415380BAE0040F7B9 /* loadingCell.xib in Resources */,
+				B8E1B13515380BAE0040F7B9 /* loadingCell_iPad.xib in Resources */,
+				B8E1B13615380BAE0040F7B9 /* ATResources.bundle in Resources */,
+				B8E1B13715380BAE0040F7B9 /* FBDialog.bundle in Resources */,
+				B8E1B13815380BAE0040F7B9 /* blackArrow.png in Resources */,
+				B8E1B13915380BAE0040F7B9 /* PayPalDonationController.xib in Resources */,
+				B8E1B13A15380BAE0040F7B9 /* bg.png in Resources */,
+				B8E1B13B15380BAE0040F7B9 /* icon_iPad.png in Resources */,
+				B8E1B13C15380BAE0040F7B9 /* news.png in Resources */,
+				B8E1B13D15380BAE0040F7B9 /* news@2x.png in Resources */,
+				B8E1B13E15380BAE0040F7B9 /* PostView_iPad.xib in Resources */,
+				B8E1B13F15380BAE0040F7B9 /* VideoCell.xib in Resources */,
+				B8E1B14015380BAE0040F7B9 /* VideoCell_iPad.xib in Resources */,
+				B8E1B14115380BAE0040F7B9 /* TVStreaming.txt in Resources */,
+				B8E1B14215380BAE0040F7B9 /* Icon-72.png in Resources */,
+				B8E1B14315380BAE0040F7B9 /* icon.png in Resources */,
+				B8E1B14415380BAE0040F7B9 /* Default-Landscape~ipad.png in Resources */,
+				B8E1B14515380BAE0040F7B9 /* Default-Portrait~ipad.png in Resources */,
+				B8E1B14615380BAE0040F7B9 /* Default.png in Resources */,
+				B8E1B14715380BAE0040F7B9 /* Default@2x.png in Resources */,
+				B8E1B14815380BAE0040F7B9 /* Default-Portrait@2x~ipad.png in Resources */,
+				B8E1B14915380BAE0040F7B9 /* Default-Landscape@2x~ipad.png in Resources */,
+				B8E1B14A15380BAE0040F7B9 /* Icon-144.png in Resources */,
+				B8E1B14B15380BAE0040F7B9 /* YouTubeTV_iPad@2x~ipad.png in Resources */,
+				B8E1B14C15380BAE0040F7B9 /* Claudio_item@2x.png in Resources */,
+				B8E1B14D15380BAE0040F7B9 /* donazioni_item@2x.png in Resources */,
+				B8E1B14E15380BAE0040F7B9 /* video_item@2x.png in Resources */,
+				B8E1B14F15380BAE0040F7B9 /* refresh_icon@2x.png in Resources */,
+				B8E1B15015380BAE0040F7B9 /* bg@2x.png in Resources */,
+				B8E1B15115380BAE0040F7B9 /* YT_item.png in Resources */,
+				B8E1B15215380BAE0040F7B9 /* YT_item@2x.png in Resources */,
+				B8E1B15315380BAE0040F7B9 /* Claudio_item.png in Resources */,
+				B8E1B15415380BAE0040F7B9 /* donazioni_item.png in Resources */,
+				B8E1B15515380BAE0040F7B9 /* video_item.png in Resources */,
+				B8E1B15615380BAE0040F7B9 /* icon@2x.png in Resources */,
+				B8CE871A15382DFC00427053 /* Play.png in Resources */,
+				B8CE871F15382F0400427053 /* Play@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B8CE86711538224400427053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CE86721538224400427053 /* TVController.m in Sources */,
+				B8CE86731538224400427053 /* iadControllerPullToRefresh.m in Sources */,
+				B8CE86741538224400427053 /* AboutViewController.m in Sources */,
+				B8CE86751538224400427053 /* AppDelegate.m in Sources */,
+				B8CE86761538224400427053 /* BlogCell.m in Sources */,
+				B8CE86771538224400427053 /* BlogViewController.m in Sources */,
+				B8CE86781538224400427053 /* iadController.m in Sources */,
+				B8CE86791538224400427053 /* DonationCell.m in Sources */,
+				B8CE867A1538224400427053 /* DonationsController.m in Sources */,
+				B8CE867B1538224400427053 /* DonationsController_iPhone.m in Sources */,
+				B8CE867C1538224400427053 /* loadingCell.m in Sources */,
+				B8CE867D1538224400427053 /* main.m in Sources */,
+				B8CE867E1538224400427053 /* Facebook.m in Sources */,
+				B8CE867F1538224400427053 /* FBDialog.m in Sources */,
+				B8CE86801538224400427053 /* FBLoginDialog.m in Sources */,
+				B8CE86811538224400427053 /* FBRequest.m in Sources */,
+				B8CE86821538224400427053 /* NSObject+SBJSON.m in Sources */,
+				B8CE86831538224400427053 /* NSString+SBJSON.m in Sources */,
+				B8CE86841538224400427053 /* SBJSON.m in Sources */,
+				B8CE86851538224400427053 /* SBJsonBase.m in Sources */,
+				B8CE86861538224400427053 /* SBJsonParser.m in Sources */,
+				B8CE86871538224400427053 /* SBJsonWriter.m in Sources */,
+				B8CE86881538224400427053 /* NSMutableURLRequest+Parameters.m in Sources */,
+				B8CE86891538224400427053 /* NSString+URLEncoding.m in Sources */,
+				B8CE868A1538224400427053 /* NSURL+Base.m in Sources */,
+				B8CE868B1538224400427053 /* Base64Transcoder.c in Sources */,
+				B8CE868C1538224400427053 /* SFHFKeychainUtils.m in Sources */,
+				B8CE868D1538224400427053 /* OAAsynchronousDataFetcher.m in Sources */,
+				B8CE868E1538224400427053 /* OAConsumer.m in Sources */,
+				B8CE868F1538224400427053 /* OADataFetcher.m in Sources */,
+				B8CE86901538224400427053 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				B8CE86911538224400427053 /* OAMutableURLRequest.m in Sources */,
+				B8CE86921538224400427053 /* OAPlaintextSignatureProvider.m in Sources */,
+				B8CE86931538224400427053 /* OARequestParameter.m in Sources */,
+				B8CE86941538224400427053 /* OAServiceTicket.m in Sources */,
+				B8CE86951538224400427053 /* OAToken.m in Sources */,
+				B8CE86961538224400427053 /* Reachability.m in Sources */,
+				B8CE86971538224400427053 /* MBProgressHUD.m in Sources */,
+				B8CE86981538224400427053 /* DetailTableViewController.m in Sources */,
+				B8CE86991538224400427053 /* GTMNSString+HTML.m in Sources */,
+				B8CE869A1538224400427053 /* MWFeedInfo.m in Sources */,
+				B8CE869B1538224400427053 /* MWFeedItem.m in Sources */,
+				B8CE869C1538224400427053 /* MWFeedParser.m in Sources */,
+				B8CE869D1538224400427053 /* MWFeedParserAppDelegate.m in Sources */,
+				B8CE869E1538224400427053 /* NSDate+InternetDateTime.m in Sources */,
+				B8CE869F1538224400427053 /* NSString+HTML.m in Sources */,
+				B8CE86A01538224400427053 /* NSString+XMLEntities.m in Sources */,
+				B8CE86A11538224400427053 /* RootViewController.m in Sources */,
+				B8CE86A21538224400427053 /* EGORefreshTableHeaderView.m in Sources */,
+				B8CE86A31538224400427053 /* PullRefreshTableViewController.m in Sources */,
+				B8CE86A41538224400427053 /* CDataScanner.m in Sources */,
+				B8CE86A51538224400427053 /* CFilteringJSONSerializer.m in Sources */,
+				B8CE86A61538224400427053 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				B8CE86A71538224400427053 /* CJSONSerialization.m in Sources */,
+				B8CE86A81538224400427053 /* CJSONSerializedData.m in Sources */,
+				B8CE86A91538224400427053 /* CDataScanner_Extensions.m in Sources */,
+				B8CE86AA1538224400427053 /* CJSONDeserializer.m in Sources */,
+				B8CE86AB1538224400427053 /* CJSONScanner.m in Sources */,
+				B8CE86AC1538224400427053 /* CJSONSerializer.m in Sources */,
+				B8CE86AD1538224400427053 /* CXMLDocument_CreationExtensions.m in Sources */,
+				B8CE86AE1538224400427053 /* CXMLNode_CreationExtensions.m in Sources */,
+				B8CE86AF1538224400427053 /* CXHTMLDocument.m in Sources */,
+				B8CE86B01538224400427053 /* CXMLDocument.m in Sources */,
+				B8CE86B11538224400427053 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				B8CE86B21538224400427053 /* CXMLElement.m in Sources */,
+				B8CE86B31538224400427053 /* CXMLElement_CreationExtensions.m in Sources */,
+				B8CE86B41538224400427053 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				B8CE86B51538224400427053 /* CXMLNamespaceNode.m in Sources */,
+				B8CE86B61538224400427053 /* CXMLNode.m in Sources */,
+				B8CE86B71538224400427053 /* CXMLNode_PrivateExtensions.m in Sources */,
+				B8CE86B81538224400427053 /* CXMLNode_XPathExtensions.m in Sources */,
+				B8CE86B91538224400427053 /* CTidy.m in Sources */,
+				B8CE86BA1538224400427053 /* NSDictionary_JSONExtensions.m in Sources */,
+				B8CE86BB1538224400427053 /* PayPalDonationController.m in Sources */,
+				B8CE86BC1538224400427053 /* PostViewController.m in Sources */,
+				B8CE86BD1538224400427053 /* SecondViewController.m in Sources */,
+				B8CE86BE1538224400427053 /* VideoCell.m in Sources */,
+				B8CE86BF1538224400427053 /* VideoViewController.m in Sources */,
+				B8CE86C01538224400427053 /* YoutubeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B8CF713214B6EFED00D9D7FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3826,6 +4691,178 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8E1B02D15380B8F0040F7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E1B02E15380B8F0040F7B9 /* TVController.m in Sources */,
+				B8E1B02F15380B8F0040F7B9 /* iadControllerPullToRefresh.m in Sources */,
+				B8E1B03015380B8F0040F7B9 /* AboutViewController.m in Sources */,
+				B8E1B03115380B8F0040F7B9 /* AppDelegate.m in Sources */,
+				B8E1B03215380B8F0040F7B9 /* BlogCell.m in Sources */,
+				B8E1B03315380B8F0040F7B9 /* BlogViewController.m in Sources */,
+				B8E1B03415380B8F0040F7B9 /* iadController.m in Sources */,
+				B8E1B03515380B8F0040F7B9 /* DonationCell.m in Sources */,
+				B8E1B03615380B8F0040F7B9 /* DonationsController.m in Sources */,
+				B8E1B03715380B8F0040F7B9 /* DonationsController_iPhone.m in Sources */,
+				B8E1B03815380B8F0040F7B9 /* loadingCell.m in Sources */,
+				B8E1B03915380B8F0040F7B9 /* main.m in Sources */,
+				B8E1B03A15380B8F0040F7B9 /* Facebook.m in Sources */,
+				B8E1B03B15380B8F0040F7B9 /* FBDialog.m in Sources */,
+				B8E1B03C15380B8F0040F7B9 /* FBLoginDialog.m in Sources */,
+				B8E1B03D15380B8F0040F7B9 /* FBRequest.m in Sources */,
+				B8E1B03E15380B8F0040F7B9 /* NSObject+SBJSON.m in Sources */,
+				B8E1B03F15380B8F0040F7B9 /* NSString+SBJSON.m in Sources */,
+				B8E1B04015380B8F0040F7B9 /* SBJSON.m in Sources */,
+				B8E1B04115380B8F0040F7B9 /* SBJsonBase.m in Sources */,
+				B8E1B04215380B8F0040F7B9 /* SBJsonParser.m in Sources */,
+				B8E1B04315380B8F0040F7B9 /* SBJsonWriter.m in Sources */,
+				B8E1B04415380B8F0040F7B9 /* NSMutableURLRequest+Parameters.m in Sources */,
+				B8E1B04515380B8F0040F7B9 /* NSString+URLEncoding.m in Sources */,
+				B8E1B04615380B8F0040F7B9 /* NSURL+Base.m in Sources */,
+				B8E1B04715380B8F0040F7B9 /* Base64Transcoder.c in Sources */,
+				B8E1B04815380B8F0040F7B9 /* SFHFKeychainUtils.m in Sources */,
+				B8E1B04915380B8F0040F7B9 /* OAAsynchronousDataFetcher.m in Sources */,
+				B8E1B04A15380B8F0040F7B9 /* OAConsumer.m in Sources */,
+				B8E1B04B15380B8F0040F7B9 /* OADataFetcher.m in Sources */,
+				B8E1B04C15380B8F0040F7B9 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				B8E1B04D15380B8F0040F7B9 /* OAMutableURLRequest.m in Sources */,
+				B8E1B04E15380B8F0040F7B9 /* OAPlaintextSignatureProvider.m in Sources */,
+				B8E1B04F15380B8F0040F7B9 /* OARequestParameter.m in Sources */,
+				B8E1B05015380B8F0040F7B9 /* OAServiceTicket.m in Sources */,
+				B8E1B05115380B8F0040F7B9 /* OAToken.m in Sources */,
+				B8E1B05215380B8F0040F7B9 /* Reachability.m in Sources */,
+				B8E1B05315380B8F0040F7B9 /* MBProgressHUD.m in Sources */,
+				B8E1B05415380B8F0040F7B9 /* DetailTableViewController.m in Sources */,
+				B8E1B05515380B8F0040F7B9 /* GTMNSString+HTML.m in Sources */,
+				B8E1B05615380B8F0040F7B9 /* MWFeedInfo.m in Sources */,
+				B8E1B05715380B8F0040F7B9 /* MWFeedItem.m in Sources */,
+				B8E1B05815380B8F0040F7B9 /* MWFeedParser.m in Sources */,
+				B8E1B05915380B8F0040F7B9 /* MWFeedParserAppDelegate.m in Sources */,
+				B8E1B05A15380B8F0040F7B9 /* NSDate+InternetDateTime.m in Sources */,
+				B8E1B05B15380B8F0040F7B9 /* NSString+HTML.m in Sources */,
+				B8E1B05C15380B8F0040F7B9 /* NSString+XMLEntities.m in Sources */,
+				B8E1B05D15380B8F0040F7B9 /* RootViewController.m in Sources */,
+				B8E1B05E15380B8F0040F7B9 /* EGORefreshTableHeaderView.m in Sources */,
+				B8E1B05F15380B8F0040F7B9 /* PullRefreshTableViewController.m in Sources */,
+				B8E1B06015380B8F0040F7B9 /* CDataScanner.m in Sources */,
+				B8E1B06115380B8F0040F7B9 /* CFilteringJSONSerializer.m in Sources */,
+				B8E1B06215380B8F0040F7B9 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				B8E1B06315380B8F0040F7B9 /* CJSONSerialization.m in Sources */,
+				B8E1B06415380B8F0040F7B9 /* CJSONSerializedData.m in Sources */,
+				B8E1B06515380B8F0040F7B9 /* CDataScanner_Extensions.m in Sources */,
+				B8E1B06615380B8F0040F7B9 /* CJSONDeserializer.m in Sources */,
+				B8E1B06715380B8F0040F7B9 /* CJSONScanner.m in Sources */,
+				B8E1B06815380B8F0040F7B9 /* CJSONSerializer.m in Sources */,
+				B8E1B06915380B8F0040F7B9 /* CXMLDocument_CreationExtensions.m in Sources */,
+				B8E1B06A15380B8F0040F7B9 /* CXMLNode_CreationExtensions.m in Sources */,
+				B8E1B06B15380B8F0040F7B9 /* CXHTMLDocument.m in Sources */,
+				B8E1B06C15380B8F0040F7B9 /* CXMLDocument.m in Sources */,
+				B8E1B06D15380B8F0040F7B9 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				B8E1B06E15380B8F0040F7B9 /* CXMLElement.m in Sources */,
+				B8E1B06F15380B8F0040F7B9 /* CXMLElement_CreationExtensions.m in Sources */,
+				B8E1B07015380B8F0040F7B9 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				B8E1B07115380B8F0040F7B9 /* CXMLNamespaceNode.m in Sources */,
+				B8E1B07215380B8F0040F7B9 /* CXMLNode.m in Sources */,
+				B8E1B07315380B8F0040F7B9 /* CXMLNode_PrivateExtensions.m in Sources */,
+				B8E1B07415380B8F0040F7B9 /* CXMLNode_XPathExtensions.m in Sources */,
+				B8E1B07515380B8F0040F7B9 /* CTidy.m in Sources */,
+				B8E1B07615380B8F0040F7B9 /* NSDictionary_JSONExtensions.m in Sources */,
+				B8E1B07715380B8F0040F7B9 /* PayPalDonationController.m in Sources */,
+				B8E1B07815380B8F0040F7B9 /* PostViewController.m in Sources */,
+				B8E1B07915380B8F0040F7B9 /* SecondViewController.m in Sources */,
+				B8E1B07A15380B8F0040F7B9 /* VideoCell.m in Sources */,
+				B8E1B07B15380B8F0040F7B9 /* VideoViewController.m in Sources */,
+				B8E1B07C15380B8F0040F7B9 /* YoutubeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E1B0C615380BAE0040F7B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E1B0C715380BAE0040F7B9 /* TVController.m in Sources */,
+				B8E1B0C815380BAE0040F7B9 /* iadControllerPullToRefresh.m in Sources */,
+				B8E1B0C915380BAE0040F7B9 /* AboutViewController.m in Sources */,
+				B8E1B0CA15380BAE0040F7B9 /* AppDelegate.m in Sources */,
+				B8E1B0CB15380BAE0040F7B9 /* BlogCell.m in Sources */,
+				B8E1B0CC15380BAE0040F7B9 /* BlogViewController.m in Sources */,
+				B8E1B0CD15380BAE0040F7B9 /* iadController.m in Sources */,
+				B8E1B0CE15380BAE0040F7B9 /* DonationCell.m in Sources */,
+				B8E1B0CF15380BAE0040F7B9 /* DonationsController.m in Sources */,
+				B8E1B0D015380BAE0040F7B9 /* DonationsController_iPhone.m in Sources */,
+				B8E1B0D115380BAE0040F7B9 /* loadingCell.m in Sources */,
+				B8E1B0D215380BAE0040F7B9 /* main.m in Sources */,
+				B8E1B0D315380BAE0040F7B9 /* Facebook.m in Sources */,
+				B8E1B0D415380BAE0040F7B9 /* FBDialog.m in Sources */,
+				B8E1B0D515380BAE0040F7B9 /* FBLoginDialog.m in Sources */,
+				B8E1B0D615380BAE0040F7B9 /* FBRequest.m in Sources */,
+				B8E1B0D715380BAE0040F7B9 /* NSObject+SBJSON.m in Sources */,
+				B8E1B0D815380BAE0040F7B9 /* NSString+SBJSON.m in Sources */,
+				B8E1B0D915380BAE0040F7B9 /* SBJSON.m in Sources */,
+				B8E1B0DA15380BAE0040F7B9 /* SBJsonBase.m in Sources */,
+				B8E1B0DB15380BAE0040F7B9 /* SBJsonParser.m in Sources */,
+				B8E1B0DC15380BAE0040F7B9 /* SBJsonWriter.m in Sources */,
+				B8E1B0DD15380BAE0040F7B9 /* NSMutableURLRequest+Parameters.m in Sources */,
+				B8E1B0DE15380BAE0040F7B9 /* NSString+URLEncoding.m in Sources */,
+				B8E1B0DF15380BAE0040F7B9 /* NSURL+Base.m in Sources */,
+				B8E1B0E015380BAE0040F7B9 /* Base64Transcoder.c in Sources */,
+				B8E1B0E115380BAE0040F7B9 /* SFHFKeychainUtils.m in Sources */,
+				B8E1B0E215380BAE0040F7B9 /* OAAsynchronousDataFetcher.m in Sources */,
+				B8E1B0E315380BAE0040F7B9 /* OAConsumer.m in Sources */,
+				B8E1B0E415380BAE0040F7B9 /* OADataFetcher.m in Sources */,
+				B8E1B0E515380BAE0040F7B9 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				B8E1B0E615380BAE0040F7B9 /* OAMutableURLRequest.m in Sources */,
+				B8E1B0E715380BAE0040F7B9 /* OAPlaintextSignatureProvider.m in Sources */,
+				B8E1B0E815380BAE0040F7B9 /* OARequestParameter.m in Sources */,
+				B8E1B0E915380BAE0040F7B9 /* OAServiceTicket.m in Sources */,
+				B8E1B0EA15380BAE0040F7B9 /* OAToken.m in Sources */,
+				B8E1B0EB15380BAE0040F7B9 /* Reachability.m in Sources */,
+				B8E1B0EC15380BAE0040F7B9 /* MBProgressHUD.m in Sources */,
+				B8E1B0ED15380BAE0040F7B9 /* DetailTableViewController.m in Sources */,
+				B8E1B0EE15380BAE0040F7B9 /* GTMNSString+HTML.m in Sources */,
+				B8E1B0EF15380BAE0040F7B9 /* MWFeedInfo.m in Sources */,
+				B8E1B0F015380BAE0040F7B9 /* MWFeedItem.m in Sources */,
+				B8E1B0F115380BAE0040F7B9 /* MWFeedParser.m in Sources */,
+				B8E1B0F215380BAE0040F7B9 /* MWFeedParserAppDelegate.m in Sources */,
+				B8E1B0F315380BAE0040F7B9 /* NSDate+InternetDateTime.m in Sources */,
+				B8E1B0F415380BAE0040F7B9 /* NSString+HTML.m in Sources */,
+				B8E1B0F515380BAE0040F7B9 /* NSString+XMLEntities.m in Sources */,
+				B8E1B0F615380BAE0040F7B9 /* RootViewController.m in Sources */,
+				B8E1B0F715380BAE0040F7B9 /* EGORefreshTableHeaderView.m in Sources */,
+				B8E1B0F815380BAE0040F7B9 /* PullRefreshTableViewController.m in Sources */,
+				B8E1B0F915380BAE0040F7B9 /* CDataScanner.m in Sources */,
+				B8E1B0FA15380BAE0040F7B9 /* CFilteringJSONSerializer.m in Sources */,
+				B8E1B0FB15380BAE0040F7B9 /* CJSONDeserializer_BlocksExtensions.m in Sources */,
+				B8E1B0FC15380BAE0040F7B9 /* CJSONSerialization.m in Sources */,
+				B8E1B0FD15380BAE0040F7B9 /* CJSONSerializedData.m in Sources */,
+				B8E1B0FE15380BAE0040F7B9 /* CDataScanner_Extensions.m in Sources */,
+				B8E1B0FF15380BAE0040F7B9 /* CJSONDeserializer.m in Sources */,
+				B8E1B10015380BAE0040F7B9 /* CJSONScanner.m in Sources */,
+				B8E1B10115380BAE0040F7B9 /* CJSONSerializer.m in Sources */,
+				B8E1B10215380BAE0040F7B9 /* CXMLDocument_CreationExtensions.m in Sources */,
+				B8E1B10315380BAE0040F7B9 /* CXMLNode_CreationExtensions.m in Sources */,
+				B8E1B10415380BAE0040F7B9 /* CXHTMLDocument.m in Sources */,
+				B8E1B10515380BAE0040F7B9 /* CXMLDocument.m in Sources */,
+				B8E1B10615380BAE0040F7B9 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				B8E1B10715380BAE0040F7B9 /* CXMLElement.m in Sources */,
+				B8E1B10815380BAE0040F7B9 /* CXMLElement_CreationExtensions.m in Sources */,
+				B8E1B10915380BAE0040F7B9 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				B8E1B10A15380BAE0040F7B9 /* CXMLNamespaceNode.m in Sources */,
+				B8E1B10B15380BAE0040F7B9 /* CXMLNode.m in Sources */,
+				B8E1B10C15380BAE0040F7B9 /* CXMLNode_PrivateExtensions.m in Sources */,
+				B8E1B10D15380BAE0040F7B9 /* CXMLNode_XPathExtensions.m in Sources */,
+				B8E1B10E15380BAE0040F7B9 /* CTidy.m in Sources */,
+				B8E1B10F15380BAE0040F7B9 /* NSDictionary_JSONExtensions.m in Sources */,
+				B8E1B11015380BAE0040F7B9 /* PayPalDonationController.m in Sources */,
+				B8E1B11115380BAE0040F7B9 /* PostViewController.m in Sources */,
+				B8E1B11215380BAE0040F7B9 /* SecondViewController.m in Sources */,
+				B8E1B11315380BAE0040F7B9 /* VideoCell.m in Sources */,
+				B8E1B11415380BAE0040F7B9 /* VideoViewController.m in Sources */,
+				B8E1B11515380BAE0040F7B9 /* YoutubeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -3888,7 +4925,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -3902,8 +4939,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
-				PROVISIONING_PROFILE = "907848C9-0E6D-490E-8823-C2A4356631FB";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -3914,7 +4951,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
 				INFOPLIST_FILE = "byoblu/byoblu-Info.plist";
@@ -3930,7 +4967,89 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		B8CE87031538224400427053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-test-Prefix.pch";
+				INFOPLIST_FILE = "byoblu copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/TestFlightSDK1.0\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu test";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B8CE87041538224400427053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-test-Prefix.pch";
+				INFOPLIST_FILE = "byoblu copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/TestFlightSDK1.0\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu test";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B8CE87051538224400427053 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-test-Prefix.pch";
+				INFOPLIST_FILE = "byoblu copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/TestFlightSDK1.0\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu test";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 				WRAPPER_EXTENSION = app;
@@ -3944,7 +5063,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrea Barbon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3964,8 +5083,8 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-lxml2";
-				PROVISIONING_PROFILE = "907848C9-0E6D-490E-8823-C2A4356631FB";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E540ED0B-DCD4-4F40-9DE4-18FEC7A649CF";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -3978,7 +5097,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Andrea Barbon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -3992,8 +5111,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
-				PROVISIONING_PROFILE = "907848C9-0E6D-490E-8823-C2A4356631FB";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E540ED0B-DCD4-4F40-9DE4-18FEC7A649CF";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -4003,7 +5122,7 @@
 		B8CF717814B6EFEE00D9D7FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
 				INFOPLIST_FILE = "byoblu/byoblu-Info.plist";
@@ -4019,7 +5138,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 				WRAPPER_EXTENSION = app;
@@ -4029,7 +5148,7 @@
 		B8CF717914B6EFEE00D9D7FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
 				INFOPLIST_FILE = "byoblu/byoblu-Info.plist";
@@ -4045,6 +5164,58 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B8E1B0BF15380B8F0040F7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
+				INFOPLIST_FILE = "byoblu copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu Pro";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B8E1B0C015380B8F0040F7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
+				INFOPLIST_FILE = "byoblu copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu Pro";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
@@ -4052,9 +5223,125 @@
 			};
 			name = Release;
 		};
+		B8E1B0C115380B8F0040F7B9 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
+				INFOPLIST_FILE = "byoblu copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu Pro";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		B8E1B15815380BAE0040F7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
+				INFOPLIST_FILE = "byoblu Pro copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu Editor";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B8E1B15915380BAE0040F7B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
+				INFOPLIST_FILE = "byoblu Pro copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu Editor";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B8E1B15A15380BAE0040F7B9 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
+				INFOPLIST_FILE = "byoblu Pro copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
+					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "byoblu Editor";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B8CE87021538224400427053 /* Build configuration list for PBXNativeTarget "byoblu test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8CE87031538224400427053 /* Debug */,
+				B8CE87041538224400427053 /* Release */,
+				B8CE87051538224400427053 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B8CF713014B6EFEC00D9D7FF /* Build configuration list for PBXProject "byoblu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -4071,6 +5358,26 @@
 				B8CF717814B6EFEE00D9D7FF /* Debug */,
 				B8CF717914B6EFEE00D9D7FF /* Release */,
 				B83FBE1B14D80A4100E2388C /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E1B0BE15380B8F0040F7B9 /* Build configuration list for PBXNativeTarget "byoblu Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E1B0BF15380B8F0040F7B9 /* Debug */,
+				B8E1B0C015380B8F0040F7B9 /* Release */,
+				B8E1B0C115380B8F0040F7B9 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E1B15715380BAE0040F7B9 /* Build configuration list for PBXNativeTarget "byoblu Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E1B15815380BAE0040F7B9 /* Debug */,
+				B8E1B15915380BAE0040F7B9 /* Release */,
+				B8E1B15A15380BAE0040F7B9 /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

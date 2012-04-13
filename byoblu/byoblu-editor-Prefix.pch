@@ -13,3 +13,5 @@
     #import <Foundation/Foundation.h>
 #endif
 
+#define TV 1
+#define AD 1

@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B8CF713514B6EFED00D9D7FF"
-               BuildableName = "byoblu.app"
-               BlueprintName = "byoblu"
+               BlueprintIdentifier = "B8E1B0C515380BAE0040F7B9"
+               BuildableName = "byoblu Pro copy.app"
+               BlueprintName = "byoblu Editor"
                ReferencedContainer = "container:byoblu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,9 +31,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8CF713514B6EFED00D9D7FF"
-            BuildableName = "byoblu.app"
-            BlueprintName = "byoblu"
+            BlueprintIdentifier = "B8E1B0C515380BAE0040F7B9"
+            BuildableName = "byoblu Pro copy.app"
+            BlueprintName = "byoblu Editor"
             ReferencedContainer = "container:byoblu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -50,9 +50,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8CF713514B6EFED00D9D7FF"
-            BuildableName = "byoblu.app"
-            BlueprintName = "byoblu"
+            BlueprintIdentifier = "B8E1B0C515380BAE0040F7B9"
+            BuildableName = "byoblu Pro copy.app"
+            BlueprintName = "byoblu Editor"
             ReferencedContainer = "container:byoblu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -68,9 +68,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8CF713514B6EFED00D9D7FF"
-            BuildableName = "byoblu.app"
-            BlueprintName = "byoblu"
+            BlueprintIdentifier = "B8E1B0C515380BAE0040F7B9"
+            BuildableName = "byoblu Pro copy.app"
+            BlueprintName = "byoblu Editor"
             ReferencedContainer = "container:byoblu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

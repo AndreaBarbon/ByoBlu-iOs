@@ -11,5 +11,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "TestFlight.h"
 #endif
 
+#define TESTING 1
+#define TV 1
+#define AD 1

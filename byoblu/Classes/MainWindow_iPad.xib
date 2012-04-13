@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1280</int>
+		<int key="IBDocument.SystemTarget">1296</int>
 		<string key="IBDocument.SystemVersion">11D50b</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
 		<string key="IBDocument.AppKitVersion">1138.32</string>
@@ -46,7 +46,6 @@
 				<int key="NSvFlags">292</int>
 				<string key="NSFrameSize">{768, 1024}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView"/>
 				<string key="NSReuseIdentifierKey">_NS:196</string>
 				<object class="NSColor" key="IBUIBackgroundColor" id="943942164">
@@ -75,7 +74,6 @@
 							<string key="NSResourceName">YT_item.png</string>
 						</object>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<reference key="IBUITabBar" ref="971559094"/>
 					</object>
 					<reference key="IBUIParentViewController" ref="7904794"/>
 					<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -124,7 +122,6 @@
 								<string key="NSResourceName">news.png</string>
 							</object>
 							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-							<reference key="IBUITabBar" ref="971559094"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="7904794"/>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -172,7 +169,6 @@
 								<string key="NSResourceName">video_item.png</string>
 							</object>
 							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-							<reference key="IBUITabBar" ref="971559094"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="7904794"/>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -221,7 +217,6 @@
 								<string key="NSResourceName">Claudio_item.png</string>
 							</object>
 							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-							<reference key="IBUITabBar" ref="971559094"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="7904794"/>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -269,7 +264,6 @@
 								<string key="NSResourceName">donazioni_item.png</string>
 							</object>
 							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-							<reference key="IBUITabBar" ref="971559094"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="7904794"/>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -314,19 +308,10 @@
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 975}, {768, 49}}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView"/>
 					<string key="NSReuseIdentifierKey">_NS:475</string>
 					<reference key="IBUIBackgroundColor" ref="943942164"/>
 					<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-					<array class="NSMutableArray" key="IBUIItems">
-						<reference ref="115246739"/>
-						<reference ref="252077494"/>
-						<reference ref="472235332"/>
-						<reference ref="943177559"/>
-						<reference ref="372304447"/>
-					</array>
-					<reference key="IBUISelectedItem" ref="252077494"/>
 				</object>
 			</object>
 		</array>
@@ -736,6 +721,10 @@
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
+			<real value="1296" key="NS.object.0"/>
+		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
