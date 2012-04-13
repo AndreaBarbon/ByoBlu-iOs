@@ -26,10 +26,12 @@
     
 
 #ifdef AD
+    NSLog(@"Ads enabled");
     advertisements = YES;
 #endif 
     
 #ifdef TV
+    NSLog(@"TV enabled");
     TVStreaming = YES;
 #endif     
     
