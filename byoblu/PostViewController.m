@@ -321,6 +321,7 @@
     
     up = 0;
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+    [self adjustBannerView];
     [self adjustSize];
     
 }
@@ -333,7 +334,6 @@
     else
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
     
-    [self adjustBannerView];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         
@@ -343,7 +343,6 @@
         if (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
             
             self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
-            [self adjustBannerView];
             return NO;
         };
     }

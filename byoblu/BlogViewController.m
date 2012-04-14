@@ -44,6 +44,8 @@
     
     self.view.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
+    
+    
 
     [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
 
@@ -163,12 +165,16 @@
     if (cell == nil) {
         
         NSString *nib;
+        float fontSize;
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
             
             nib = @"BlogCell_iPad";
+            fontSize = 26.0;
             
         }else{  
             nib = @"BlogCell";
+            fontSize = 12.0;
+
         }
 		NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:nib owner:self options:nil];
 		cell = [topLevelObjects objectAtIndex:0];
@@ -176,6 +182,9 @@
         cell.date.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         cell.backgroundColor = [UIColor clearColor];
         cell.backgroundView = nil;
+        NSLog(@"%@", [UIFont fontNamesForFamilyName:@"Forque"]);
+        [cell.title setFont:[UIFont fontWithName:@"SpecialElite-Regular" size:fontSize]];
+        //[cell.title setFont:[UIFont fontWithName:@"FORQUE" size:fontSize]];
 
 
     }
@@ -226,14 +235,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {    
     int r = indexPath.row;
-
+    
     PostViewController *postViewController;
 
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
             
             postViewController = [[PostViewController alloc] initWithNibName:@"PostView_iPad" bundle:nil];            
         }else{  
-            postViewController = [[PostViewController alloc] initWithNibName:@"postView" bundle:nil];
+            postViewController = [[PostViewController alloc] initWithNibName:@"PostView" bundle:nil];
         }
     
     postViewController.HTMLContent = [[listaElementi objectAtIndex:r] summary];
@@ -247,10 +256,13 @@
     
     [self.adBannerView removeFromSuperview];
     iadPresent = 0;
+    
+
+    
     [self.navigationController pushViewController:postViewController animated:YES];
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 
-         
+
 }
 
 

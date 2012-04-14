@@ -36,6 +36,19 @@
 		B882962715304D7200CBADC2 /* iadControllerPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */; };
 		B882962815304FFF00CBADC2 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0ABB1524A128003D7C1B /* TVController.m */; };
 		B8A513821529BC7F00869FB2 /* TVStreaming.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8A513811529BC7F00869FB2 /* TVStreaming.txt */; };
+		B8B4A65315386411004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
+		B8B4A65415386643004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
+		B8B4A65515386644004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
+		B8B4A65615386645004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
+		B8B4A657153871B6004D8822 /* byoblu-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8C133E61522946B00E54901 /* byoblu-Info.plist */; };
+		B8B4A65A1538B6AD004D8822 /* Forque.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A6591538B6AD004D8822 /* Forque.ttf */; };
+		B8B4A65B1538B6AD004D8822 /* Forque.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A6591538B6AD004D8822 /* Forque.ttf */; };
+		B8B4A65C1538B6AD004D8822 /* Forque.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A6591538B6AD004D8822 /* Forque.ttf */; };
+		B8B4A65D1538B6AD004D8822 /* Forque.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A6591538B6AD004D8822 /* Forque.ttf */; };
+		B8B4A65F1538BC24004D8822 /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65E1538BC24004D8822 /* refresh_icon.png */; };
+		B8B4A6601538BC24004D8822 /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65E1538BC24004D8822 /* refresh_icon.png */; };
+		B8B4A6611538BC24004D8822 /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65E1538BC24004D8822 /* refresh_icon.png */; };
+		B8B4A6621538BC24004D8822 /* refresh_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65E1538BC24004D8822 /* refresh_icon.png */; };
 		B8B60E4A152DC0C100771045 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E48152DC0C100771045 /* Icon-72.png */; };
 		B8B60E4B152DC0C100771045 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B8B60E49152DC0C100771045 /* icon.png */; };
 		B8C135661522946E00E54901 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133DC1522946B00E54901 /* AboutViewController.m */; };
@@ -299,18 +312,11 @@
 		B8CE871D15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
 		B8CE871E15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
 		B8CE871F15382F0400427053 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8CE871B15382F0400427053 /* Play@2x.png */; };
-		B8CE87231538325600427053 /* byoblu-editor-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87201538325500427053 /* byoblu-editor-Info.plist */; };
-		B8CE87241538325600427053 /* byoblu-editor-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87201538325500427053 /* byoblu-editor-Info.plist */; };
-		B8CE87251538325600427053 /* byoblu-editor-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87201538325500427053 /* byoblu-editor-Info.plist */; };
-		B8CE87261538325600427053 /* byoblu-editor-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87201538325500427053 /* byoblu-editor-Info.plist */; };
-		B8CE87271538325600427053 /* byoblu-pro-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87211538325500427053 /* byoblu-pro-Info.plist */; };
-		B8CE87281538325600427053 /* byoblu-pro-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87211538325500427053 /* byoblu-pro-Info.plist */; };
 		B8CE87291538325600427053 /* byoblu-pro-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87211538325500427053 /* byoblu-pro-Info.plist */; };
-		B8CE872A1538325600427053 /* byoblu-pro-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87211538325500427053 /* byoblu-pro-Info.plist */; };
-		B8CE872B1538325600427053 /* byoblu-test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87221538325600427053 /* byoblu-test-Info.plist */; };
-		B8CE872C1538325600427053 /* byoblu-test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87221538325600427053 /* byoblu-test-Info.plist */; };
-		B8CE872D1538325600427053 /* byoblu-test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87221538325600427053 /* byoblu-test-Info.plist */; };
-		B8CE872E1538325600427053 /* byoblu-test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8CE87221538325600427053 /* byoblu-test-Info.plist */; };
+		B8CE8730153837D100427053 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8CE872F153837D100427053 /* SpecialElite.ttf */; };
+		B8CE8731153837D100427053 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8CE872F153837D100427053 /* SpecialElite.ttf */; };
+		B8CE8732153837D100427053 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8CE872F153837D100427053 /* SpecialElite.ttf */; };
+		B8CE8733153837D100427053 /* SpecialElite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8CE872F153837D100427053 /* SpecialElite.ttf */; };
 		B8CF713B14B6EFED00D9D7FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713A14B6EFED00D9D7FF /* UIKit.framework */; };
 		B8CF713D14B6EFED00D9D7FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713C14B6EFED00D9D7FF /* Foundation.framework */; };
 		B8CF713F14B6EFED00D9D7FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CF713E14B6EFED00D9D7FF /* CoreGraphics.framework */; };
@@ -1370,6 +1376,9 @@
 		B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iadControllerPullToRefresh.m; sourceTree = "<group>"; };
 		B882962415304BDD00CBADC2 /* iadControllerPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iadControllerPullToRefresh.h; sourceTree = "<group>"; };
 		B8A513811529BC7F00869FB2 /* TVStreaming.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TVStreaming.txt; sourceTree = "<group>"; };
+		B8B4A65215386411004D8822 /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
+		B8B4A6591538B6AD004D8822 /* Forque.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Forque.ttf; sourceTree = "<group>"; };
+		B8B4A65E1538BC24004D8822 /* refresh_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_icon.png; sourceTree = "<group>"; };
 		B8B60E48152DC0C100771045 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = SOURCE_ROOT; };
 		B8B60E49152DC0C100771045 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		B8C133DB1522946B00E54901 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
@@ -1382,7 +1391,7 @@
 		B8C133E31522946B00E54901 /* BlogCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlogCell_iPad.xib; sourceTree = "<group>"; };
 		B8C133E41522946B00E54901 /* BlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogViewController.h; sourceTree = "<group>"; };
 		B8C133E51522946B00E54901 /* BlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogViewController.m; sourceTree = "<group>"; };
-		B8C133E61522946B00E54901 /* byoblu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "byoblu-Info.plist"; sourceTree = "<group>"; };
+		B8C133E61522946B00E54901 /* byoblu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "byoblu-Info.plist"; path = "byoblu/byoblu-Info.plist"; sourceTree = "<group>"; };
 		B8C133E71522946B00E54901 /* byoblu-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "byoblu-Prefix.pch"; sourceTree = "<group>"; };
 		B8C133E91522946B00E54901 /* iadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iadController.h; sourceTree = "<group>"; };
 		B8C133EA1522946B00E54901 /* iadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iadController.m; sourceTree = "<group>"; };
@@ -1856,6 +1865,7 @@
 		B8CE87201538325500427053 /* byoblu-editor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "byoblu-editor-Info.plist"; sourceTree = "<group>"; };
 		B8CE87211538325500427053 /* byoblu-pro-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "byoblu-pro-Info.plist"; sourceTree = "<group>"; };
 		B8CE87221538325600427053 /* byoblu-test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "byoblu-test-Info.plist"; sourceTree = "<group>"; };
+		B8CE872F153837D100427053 /* SpecialElite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpecialElite.ttf; sourceTree = "<group>"; };
 		B8CF713614B6EFED00D9D7FF /* byoblu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = byoblu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8CF713A14B6EFED00D9D7FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8CF713C14B6EFED00D9D7FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -3031,7 +3041,6 @@
 				B8C133DF1522946B00E54901 /* AppDelegate.m */,
 				B8C133E41522946B00E54901 /* BlogViewController.h */,
 				B8C133E51522946B00E54901 /* BlogViewController.m */,
-				B8C133E61522946B00E54901 /* byoblu-Info.plist */,
 				B8C133EF1522946B00E54901 /* Claudio.txt */,
 				B8C133F01522946B00E54901 /* CSS.txt */,
 				B8C133F51522946B00E54901 /* Donations.txt */,
@@ -3047,9 +3056,10 @@
 				B8C1354E1522946E00E54901 /* PayPalDonationController.h */,
 				B8C1354F1522946E00E54901 /* PayPalDonationController.m */,
 				B8C135501522946E00E54901 /* PayPalDonationController.xib */,
-				B8C135591522946E00E54901 /* PostView_iPad.xib */,
 				B8C1355A1522946E00E54901 /* PostViewController.h */,
 				B8C1355B1522946E00E54901 /* PostViewController.m */,
+				B8C135591522946E00E54901 /* PostView_iPad.xib */,
+				B8B4A65215386411004D8822 /* PostView.xib */,
 				B8C1355C1522946E00E54901 /* SecondViewController.h */,
 				B8C1355D1522946E00E54901 /* SecondViewController.m */,
 				B8C135621522946E00E54901 /* VideoViewController.h */,
@@ -3750,6 +3760,7 @@
 				B8C135531522946E00E54901 /* bg.png */,
 				B849858D1536F47F0032022E /* bg@2x.png */,
 				B849858B15363A730032022E /* refresh_icon@2x.png */,
+				B8B4A65E1538BC24004D8822 /* refresh_icon.png */,
 				B84985831536337C0032022E /* YouTubeTV_iPad@2x~ipad.png */,
 				B8CE871615382DFC00427053 /* Play.png */,
 				B8CE871B15382F0400427053 /* Play@2x.png */,
@@ -4076,10 +4087,13 @@
 				B8CDB698150BC54A00CEB9B3 /* libz.1.2.5.dylib */,
 				B8CDB694150BC53600CEB9B3 /* libxml2.2.7.3.dylib */,
 				B83FBE1D14D80A9700E2388C /* Entitlements.plist */,
+				B8CE872F153837D100427053 /* SpecialElite.ttf */,
+				B8B4A6591538B6AD004D8822 /* Forque.ttf */,
 				B8C133DA1522946B00E54901 /* byoblu */,
 				B8CF716C14B6EFEE00D9D7FF /* byobluTests */,
 				B8CF713914B6EFED00D9D7FF /* Frameworks */,
 				B8CF713714B6EFED00D9D7FF /* Products */,
+				B8C133E61522946B00E54901 /* byoblu-Info.plist */,
 				B8CE87201538325500427053 /* byoblu-editor-Info.plist */,
 				B8CE87211538325500427053 /* byoblu-pro-Info.plist */,
 				B8CE87221538325600427053 /* byoblu-test-Info.plist */,
@@ -4348,9 +4362,10 @@
 				B8CE87101538226800427053 /* release_notes.txt in Resources */,
 				B8CE871715382DFC00427053 /* Play.png in Resources */,
 				B8CE871C15382F0400427053 /* Play@2x.png in Resources */,
-				B8CE87231538325600427053 /* byoblu-editor-Info.plist in Resources */,
-				B8CE87271538325600427053 /* byoblu-pro-Info.plist in Resources */,
-				B8CE872B1538325600427053 /* byoblu-test-Info.plist in Resources */,
+				B8CE8730153837D100427053 /* SpecialElite.ttf in Resources */,
+				B8B4A65415386643004D8822 /* PostView.xib in Resources */,
+				B8B4A65A1538B6AD004D8822 /* Forque.ttf in Resources */,
+				B8B4A65F1538BC24004D8822 /* refresh_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4410,9 +4425,11 @@
 				B879E96A153709E90085308A /* icon@2x.png in Resources */,
 				B8CE871815382DFC00427053 /* Play.png in Resources */,
 				B8CE871D15382F0400427053 /* Play@2x.png in Resources */,
-				B8CE87241538325600427053 /* byoblu-editor-Info.plist in Resources */,
-				B8CE87281538325600427053 /* byoblu-pro-Info.plist in Resources */,
-				B8CE872C1538325600427053 /* byoblu-test-Info.plist in Resources */,
+				B8CE8731153837D100427053 /* SpecialElite.ttf in Resources */,
+				B8B4A65315386411004D8822 /* PostView.xib in Resources */,
+				B8B4A657153871B6004D8822 /* byoblu-Info.plist in Resources */,
+				B8B4A65B1538B6AD004D8822 /* Forque.ttf in Resources */,
+				B8B4A6601538BC24004D8822 /* refresh_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4472,9 +4489,11 @@
 				B8E1B0BD15380B8F0040F7B9 /* icon@2x.png in Resources */,
 				B8CE871915382DFC00427053 /* Play.png in Resources */,
 				B8CE871E15382F0400427053 /* Play@2x.png in Resources */,
-				B8CE87251538325600427053 /* byoblu-editor-Info.plist in Resources */,
 				B8CE87291538325600427053 /* byoblu-pro-Info.plist in Resources */,
-				B8CE872D1538325600427053 /* byoblu-test-Info.plist in Resources */,
+				B8CE8732153837D100427053 /* SpecialElite.ttf in Resources */,
+				B8B4A65515386644004D8822 /* PostView.xib in Resources */,
+				B8B4A65C1538B6AD004D8822 /* Forque.ttf in Resources */,
+				B8B4A6611538BC24004D8822 /* refresh_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4534,9 +4553,10 @@
 				B8E1B15615380BAE0040F7B9 /* icon@2x.png in Resources */,
 				B8CE871A15382DFC00427053 /* Play.png in Resources */,
 				B8CE871F15382F0400427053 /* Play@2x.png in Resources */,
-				B8CE87261538325600427053 /* byoblu-editor-Info.plist in Resources */,
-				B8CE872A1538325600427053 /* byoblu-pro-Info.plist in Resources */,
-				B8CE872E1538325600427053 /* byoblu-test-Info.plist in Resources */,
+				B8CE8733153837D100427053 /* SpecialElite.ttf in Resources */,
+				B8B4A65615386645004D8822 /* PostView.xib in Resources */,
+				B8B4A65D1538B6AD004D8822 /* Forque.ttf in Resources */,
+				B8B4A6621538BC24004D8822 /* refresh_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4947,7 +4967,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
@@ -4961,7 +4984,7 @@
 					"-lxml2",
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
 				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
@@ -4980,7 +5003,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
 				INFOPLIST_FILE = "byoblu/byoblu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5006,13 +5029,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-test-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-test-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
 					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
 					"\"$(SRCROOT)/byoblu/open Frameworks/TestFlightSDK1.0\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-lxml2",
@@ -5033,13 +5057,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-test-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-test-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
 					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
 					"\"$(SRCROOT)/byoblu/open Frameworks/TestFlightSDK1.0\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-lxml2",
@@ -5061,13 +5086,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-test-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-test-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
 					"\"$(SRCROOT)/byoblu/open Frameworks/PayPal Library\"",
 					"\"$(SRCROOT)/byoblu/open Frameworks/TestFlightSDK1.0\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-lxml2",
@@ -5085,7 +5111,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
@@ -5106,7 +5135,7 @@
 					"-lxml2",
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				OTHER_LDFLAGS = "-lxml2";
 				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D1546DF1-FC2C-4300-B07D-0879E7692156";
@@ -5119,7 +5148,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
@@ -5133,7 +5165,7 @@
 					"-lxml2",
 					/usr/include/libxml2,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-lxml2";
 				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
@@ -5151,7 +5183,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
 				INFOPLIST_FILE = "byoblu/byoblu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5177,7 +5209,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-Prefix.pch";
 				INFOPLIST_FILE = "byoblu/byoblu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5203,7 +5235,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-pro-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-pro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5229,7 +5261,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-pro-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-pro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5256,7 +5288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-pro-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-pro-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5278,11 +5310,15 @@
 		B8E1B15815380BAE0040F7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-editor-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-editor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5294,7 +5330,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "byoblu Editor";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 				WRAPPER_EXTENSION = app;
@@ -5304,11 +5340,15 @@
 		B8E1B15915380BAE0040F7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-editor-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-editor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5320,7 +5360,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "byoblu Editor";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 				WRAPPER_EXTENSION = app;
@@ -5330,12 +5370,16 @@
 		B8E1B15A15380BAE0040F7B9 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrea Barbon (7WU452F7X9)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "byoblu/byoblu-editor-Prefix.pch";
 				INFOPLIST_FILE = "byoblu-editor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/byoblu/open Frameworks/AddThis\"",
@@ -5347,7 +5391,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "byoblu Editor";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D1546DF1-FC2C-4300-B07D-0879E7692156";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
 				WRAPPER_EXTENSION = app;

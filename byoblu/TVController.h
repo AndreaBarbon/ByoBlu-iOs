@@ -19,6 +19,7 @@
     UIView *playView;
     NSString *s;
     float f;
+    int RetryTimes;
 }
 
 -(void)reload;

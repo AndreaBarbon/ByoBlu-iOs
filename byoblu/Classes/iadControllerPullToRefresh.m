@@ -21,6 +21,7 @@
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner
 {
     [self adjustBannerViewAnimated:YES];
+    NSLog(@"Ad loaded");
 }
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
@@ -39,8 +40,7 @@
 
 
 - (void)adjustBannerViewAnimated:(BOOL)animated
-{
-        
+{        
     contentViewFrame = self.view.frame;
     CGRect parentViewFrame = self.parentViewController.view.frame;
     //CGRect TVFrame = self.tableView.frame;
@@ -92,6 +92,7 @@
     
     self.adBannerView.delegate = self;
     self.adBannerView.requiredContentSizeIdentifiers = [NSSet setWithObjects:ADBannerContentSizeIdentifierPortrait, ADBannerContentSizeIdentifierLandscape, nil];
+    self.adBannerView.backgroundColor = [UIColor clearColor];
 }
 
 
@@ -144,6 +145,11 @@
     // Release any retained subviews of the main view.
 }
 
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    
+    [self adjustBannerViewAnimated:YES];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {    
 
@@ -152,7 +158,7 @@
     else
         self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
     
-    [self adjustBannerViewAnimated:NO];
+    //[self adjustBannerViewAnimated:NO];
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         
@@ -162,7 +168,7 @@
         if (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown){
             
             self.adBannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
-            [self adjustBannerViewAnimated:NO];
+            //[self adjustBannerViewAnimated:NO];
             return NO;
         };
     }

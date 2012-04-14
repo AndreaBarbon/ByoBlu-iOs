@@ -36,7 +36,6 @@
 #endif     
     
     
-    
     if (!TVStreaming) {
     
         NSMutableArray* newArray = [NSMutableArray arrayWithArray:self.tabBarController.viewControllers];

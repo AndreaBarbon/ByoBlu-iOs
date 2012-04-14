@@ -85,5 +85,9 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SpecialElite.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -23,19 +23,31 @@
     return YES; // else load the URL as desired
 }
 
+#define MAXRETRY 3
+
 -(void)reload {
     
+    self.view.backgroundColor = [UIColor clearColor];
     webView.hidden = 1;
-    [MBProgressHUD hideHUDForView:self.view animated:YES];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:s]]];
-    [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
+    
+    if (RetryTimes<MAXRETRY) {
+        webView.hidden = 1;
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:s]]];
+        [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
+        RetryTimes++;
+    } else {
+        [webView stopLoading];
+        RetryTimes=0;
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    }
     
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor clearColor];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
 
@@ -79,7 +91,7 @@
 
 -(void)webView:(UIWebView *)webView_ didFailLoadWithError:(NSError *)error {
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:s]]];
+    [self reload];
     
 }
 
@@ -90,13 +102,16 @@
     [self.view addSubview:webView];   
     [MBProgressHUD hideHUDForView:self.view animated:YES];
     webView.hidden = 0;
+    self.view.backgroundColor = [UIColor blackColor];
+    RetryTimes=0;
+
 
 
     
     //The setup code (in viewDidLoad in your view controller)
     //CGRect bounds = [[UIScreen mainScreen] bounds];
     
-    [self getButton];
+    //[self getButton];
     //[self play];
 
 }
@@ -184,7 +199,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    
+    webView.center = self.view.center;   
 }
 
 

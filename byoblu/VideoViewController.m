@@ -91,7 +91,7 @@
     picker = [[UIPickerView alloc] init];
     picker.delegate = self;
     picker.dataSource = self;
-    picker.frame = CGRectMake(10, 10, 250, 200);
+    //picker.frame = CGRectMake(10, 10, 250, 200);
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
         
@@ -171,6 +171,8 @@
 }
 
 - (void)grabXML {
+    
+    NSLog(@"Grabbing XML");
     
     noMoreVideos = 1;
 	
@@ -366,12 +368,15 @@
     if (cell == nil) {
         
         NSString *nib;
+        float fontSize;
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
             
             nib = @"VideoCell_iPad";
+            fontSize = 26.0;
             
         }else{  
             nib = @"VideoCell";
+            fontSize = 12.0;
         }
 		NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:nib owner:self options:nil];
 		cell = [topLevelObjects objectAtIndex:0];
@@ -384,6 +389,8 @@
         else
             cell.thumb.layer.cornerRadius = RHO_iPad;
         cell.thumb.layer.masksToBounds = YES;
+        [cell.title setFont:[UIFont fontWithName:@"SpecialElite-Regular" size:fontSize]];
+
 
     }
 
@@ -411,7 +418,7 @@
         return c;
     }
     
-    cell.title.text = [self trova:@"title" numero:r];
+    cell.title.text = [[self trova:@"title" numero:r] uppercaseString];
     NSString *date = [self trova:@"published" numero:r];
     cell.date.text = date;
     cell.viewCount.text = [NSString stringWithFormat:@"Views: %d", [[self trova:@"viewCount" numero:r] intValue]];
@@ -465,10 +472,12 @@
 
 - (void)loadAnotherImage {
     
+    loadingImages=YES;
+    
     if (loadedImages < [videos count]) {
         
         NSString *s = [self trova:@"thumb" numero:loadedImages];//[self thumbYouTube:[self find:@"description" Number:loadedImages]];
-        //NSLog(@"Loading image #%d, url = %@", loadedImages, s);
+        NSLog(@"Loading image #%d, url = %@", loadedImages, s);
         NSURL *u = [NSURL URLWithString:s];
         NSURLRequest* request = [NSURLRequest requestWithURL:u cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:TIME_OUT];
         connectionImages = [NSURLConnection connectionWithRequest:request delegate:self];
@@ -580,7 +589,7 @@
         web.backgroundColor = [UIColor clearColor];
 
         [controller.view addSubview:web];
-        controller.title = [self trova:@"title" numero:r];
+        controller.title = [[self trova:@"title" numero:r] lowercaseString];
         controller.view.backgroundColor = [UIColor clearColor];
         
         //Add the share button
@@ -637,6 +646,14 @@
     
     return @"?";
 	
+}
+
+- (BOOL)isJPEGValid:(NSData *)jpeg {
+    if ([jpeg length] < 4) return NO;
+    const char * bytes = (const char *)[jpeg bytes];
+    if (bytes[0] != 0xFF || bytes[1] != 0xD8) return NO;
+    if (bytes[[jpeg length] - 2] != 0xFF || bytes[[jpeg length] - 1] != 0xD9) return NO;
+    return YES;
 }
 
 #pragma mark -
@@ -706,9 +723,12 @@
         
     } else if(theConnection == connectionImages){
         
+        NSLog(@"Connection for image #%d finished", loadedImages);
+        
         UIImage *img = [UIImage imageWithData:data];
-        if (img == nil) {
-            NSLog(@"Skipping image #%d, because it's nil", loadedImages);
+        
+        if (!img ){ //|| ![self isJPEGValid:data]) {
+            NSLog(@"Skipping image #%d, because it's nil or invalid", loadedImages);
             [self skipImage];
         } else {
             //NSLog(@"Adding image #%d", loadedImages);
