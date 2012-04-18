@@ -22,8 +22,8 @@ html {
 }
 body {
     font-weight: 400;
-    font-size: 23px;
-    line-height: 27px;
+    font-size: 40px;
+    line-height: 50px;
     color: #000;
     margin: 10px 13px 10px 13px;
 }
@@ -138,9 +138,9 @@ pre code {
   overflow: hidden;
 }
 .column {
-  width: 45%;
+  width: 90%;
   float: left;
-  margin-left: 35px;
+  margin-left: 5%;
 }
 
 ul {list-style-type:circle}
@@ -160,9 +160,7 @@ ul {list-style-type:circle}
     <p>  Fino ai 28 anni sono stato principalmente musicista e ho venduto dischi in numerosi paesi del mondo. Poi ho fatto il project manager e l'amministratore delegato in alcuni progetti informatici, cosa che mi ha portato a viaggiare in tutta Europa e a stabilirmi a Dubai per un anno, nel 2005.</p>
 
     <p>  Tre anni fa ho deciso di aprire, con lo pseudonimo di Byoblu, un videoblog, ovvero un tipo di blog caratterizzato dal video come mezzo di comunicazione principale. Ho iniziato realizzando un mini documentario sulla storia della democrazia e mi sono ritrovato, in un vortice inarrestabile, a seguire sul campo le vicende del terremoto per un anno intero, attività che è stata riconosciuta con il Premio Agenda Rossa e con il XXXI Premio Ischia Internazionale del Giornalismo, nella categoria social media 2010. Le denunce e le testimonianze raccolte sono state anche utilizzate dalla Procura dell'Aquila nell'ambito dell'inchiesta che ha coinvolto la Commissione Grandi Rischi.</p>
-  </div>
 
-  <div class="column">
     <p>  Per sperimentare i meccanismi di autoproduzione di contenuti che la rete può non solo sostenere, ma anche produrre e consumare, ho realizzato un doppio dvd sul tema della prevedibilità dei terremoti, dal titolo &ldquo;Internet for Giuliani&rdquo;, che mette a confronto diretto i risultati della scienza e le nuove frontiere della ricerca indipendente. Un approfondimento che mi pareva mancare e di cui molte persone mi avevano rappresentato l'esigenza.</p>
 
     <p>  Le mie posizioni critiche sulle relazioni tra le grandi banche d'affari, la speculazione internazionale e le lobby che hanno portato al rovesciamento del governo italiano e di quello greco, con l'insediamento di Monti e Papademos, hanno suscitato un acceso dibattito che ha travalicato i limiti della rete e che è approdato nei salotti televisivi, dove spesso sono stato invitato a rappresentare le posizioni del mio blog in merito a questa e ad altre questioni.</p>

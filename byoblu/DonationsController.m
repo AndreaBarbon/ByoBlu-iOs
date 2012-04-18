@@ -33,7 +33,13 @@
     webView.scalesPageToFit = YES;
     
     NSError *error;
-    NSString* filePath= [[NSBundle mainBundle] pathForResource:@"Donations" ofType:@"txt"];
+    NSString* filePath;
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        filePath= [[NSBundle mainBundle] pathForResource:@"Donations" ofType:@"txt"];
+    else
+        filePath= [[NSBundle mainBundle] pathForResource:@"Donations_iPhone" ofType:@"txt"];
+    
     NSString *s = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
     [webView loadHTMLString:s baseURL:nil];
     webView.backgroundColor = [UIColor clearColor];

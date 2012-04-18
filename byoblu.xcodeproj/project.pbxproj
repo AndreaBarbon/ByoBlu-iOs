@@ -36,6 +36,14 @@
 		B882962715304D7200CBADC2 /* iadControllerPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */; };
 		B882962815304FFF00CBADC2 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0ABB1524A128003D7C1B /* TVController.m */; };
 		B8A513821529BC7F00869FB2 /* TVStreaming.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8A513811529BC7F00869FB2 /* TVStreaming.txt */; };
+		B8AC3849153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */; };
+		B8AC384A153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */; };
+		B8AC384B153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */; };
+		B8AC384C153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */; };
+		B8AC384F153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC384E153F1D6B004AE4A2 /* Donations_iPhone.txt */; };
+		B8AC3850153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC384E153F1D6B004AE4A2 /* Donations_iPhone.txt */; };
+		B8AC3851153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC384E153F1D6B004AE4A2 /* Donations_iPhone.txt */; };
+		B8AC3852153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8AC384E153F1D6B004AE4A2 /* Donations_iPhone.txt */; };
 		B8B4A65315386411004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
 		B8B4A65415386643004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
 		B8B4A65515386644004D8822 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B4A65215386411004D8822 /* PostView.xib */; };
@@ -71,8 +79,6 @@
 		B8C1357A1522946E00E54901 /* DonationsController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C133FA1522946B00E54901 /* DonationsController_iPhone.m */; };
 		B8C1357B1522946E00E54901 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
 		B8C1357C1522946E00E54901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
-		B8C1357D1522946E00E54901 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
-		B8C1357E1522946E00E54901 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
 		B8C1357F1522946E00E54901 /* loadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C134031522946B00E54901 /* loadingCell.m */; };
 		B8C135801522946E00E54901 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
 		B8C135811522946E00E54901 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
@@ -264,8 +270,6 @@
 		B8CE86DA1538224400427053 /* DonationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F81522946B00E54901 /* DonationsController.xib */; };
 		B8CE86DB1538224400427053 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
 		B8CE86DC1538224400427053 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
-		B8CE86DD1538224400427053 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
-		B8CE86DE1538224400427053 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
 		B8CE86DF1538224400427053 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
 		B8CE86E01538224400427053 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
 		B8CE86E11538224400427053 /* ATResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C1340A1522946B00E54901 /* ATResources.bundle */; };
@@ -425,8 +429,6 @@
 		B8E1B09615380B8F0040F7B9 /* DonationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F81522946B00E54901 /* DonationsController.xib */; };
 		B8E1B09715380B8F0040F7B9 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
 		B8E1B09815380B8F0040F7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
-		B8E1B09915380B8F0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
-		B8E1B09A15380B8F0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
 		B8E1B09B15380B8F0040F7B9 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
 		B8E1B09C15380B8F0040F7B9 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
 		B8E1B09D15380B8F0040F7B9 /* ATResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C1340A1522946B00E54901 /* ATResources.bundle */; };
@@ -567,8 +569,6 @@
 		B8E1B12F15380BAE0040F7B9 /* DonationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133F81522946B00E54901 /* DonationsController.xib */; };
 		B8E1B13015380BAE0040F7B9 /* DonationsController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */; };
 		B8E1B13115380BAE0040F7B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FC1522946B00E54901 /* InfoPlist.strings */; };
-		B8E1B13215380BAE0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */; };
-		B8E1B13315380BAE0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */; };
 		B8E1B13415380BAE0040F7B9 /* loadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134041522946B00E54901 /* loadingCell.xib */; };
 		B8E1B13515380BAE0040F7B9 /* loadingCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8C134051522946B00E54901 /* loadingCell_iPad.xib */; };
 		B8E1B13615380BAE0040F7B9 /* ATResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8C1340A1522946B00E54901 /* ATResources.bundle */; };
@@ -1376,6 +1376,8 @@
 		B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iadControllerPullToRefresh.m; sourceTree = "<group>"; };
 		B882962415304BDD00CBADC2 /* iadControllerPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iadControllerPullToRefresh.h; sourceTree = "<group>"; };
 		B8A513811529BC7F00869FB2 /* TVStreaming.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TVStreaming.txt; sourceTree = "<group>"; };
+		B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Claudio_iPhone.txt; sourceTree = "<group>"; };
+		B8AC384E153F1D6B004AE4A2 /* Donations_iPhone.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Donations_iPhone.txt; sourceTree = "<group>"; };
 		B8B4A65215386411004D8822 /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		B8B4A6591538B6AD004D8822 /* Forque.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Forque.ttf; sourceTree = "<group>"; };
 		B8B4A65E1538BC24004D8822 /* refresh_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_icon.png; sourceTree = "<group>"; };
@@ -1411,8 +1413,6 @@
 		B8C133FA1522946B00E54901 /* DonationsController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonationsController_iPhone.m; sourceTree = "<group>"; };
 		B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DonationsController_iPhone.xib; sourceTree = "<group>"; };
 		B8C133FD1522946B00E54901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B8C133FF1522946B00E54901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B8C134011522946B00E54901 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B8C134021522946B00E54901 /* loadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadingCell.h; sourceTree = "<group>"; };
 		B8C134031522946B00E54901 /* loadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loadingCell.m; sourceTree = "<group>"; };
 		B8C134041522946B00E54901 /* loadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = loadingCell.xib; sourceTree = "<group>"; };
@@ -3001,6 +3001,18 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		B8AC384D153F1D51004AE4A2 /* TXTs */ = {
+			isa = PBXGroup;
+			children = (
+				B8C133F01522946B00E54901 /* CSS.txt */,
+				B8C133EF1522946B00E54901 /* Claudio.txt */,
+				B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */,
+				B8C133F51522946B00E54901 /* Donations.txt */,
+				B8AC384E153F1D6B004AE4A2 /* Donations_iPhone.txt */,
+			);
+			name = TXTs;
+			sourceTree = "<group>";
+		};
 		B8B60E4C152DC3B000771045 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -3027,6 +3039,7 @@
 		B8C133DA1522946B00E54901 /* byoblu */ = {
 			isa = PBXGroup;
 			children = (
+				B8AC384D153F1D51004AE4A2 /* TXTs */,
 				B8CE871515382A3100427053 /* Prefixes */,
 				B8B60E4C152DC3B000771045 /* Cells */,
 				B8C133E81522946B00E54901 /* Classes */,
@@ -3041,17 +3054,12 @@
 				B8C133DF1522946B00E54901 /* AppDelegate.m */,
 				B8C133E41522946B00E54901 /* BlogViewController.h */,
 				B8C133E51522946B00E54901 /* BlogViewController.m */,
-				B8C133EF1522946B00E54901 /* Claudio.txt */,
-				B8C133F01522946B00E54901 /* CSS.txt */,
-				B8C133F51522946B00E54901 /* Donations.txt */,
 				B8C133F61522946B00E54901 /* DonationsController.h */,
 				B8C133F71522946B00E54901 /* DonationsController.m */,
 				B8C133F81522946B00E54901 /* DonationsController.xib */,
 				B8C133F91522946B00E54901 /* DonationsController_iPhone.h */,
 				B8C133FA1522946B00E54901 /* DonationsController_iPhone.m */,
 				B8C133FB1522946B00E54901 /* DonationsController_iPhone.xib */,
-				B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */,
-				B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */,
 				B8C134061522946B00E54901 /* main.m */,
 				B8C1354E1522946E00E54901 /* PayPalDonationController.h */,
 				B8C1354F1522946E00E54901 /* PayPalDonationController.m */,
@@ -4321,8 +4329,6 @@
 				B8CE86DA1538224400427053 /* DonationsController.xib in Resources */,
 				B8CE86DB1538224400427053 /* DonationsController_iPhone.xib in Resources */,
 				B8CE86DC1538224400427053 /* InfoPlist.strings in Resources */,
-				B8CE86DD1538224400427053 /* MainStoryboard_iPad.storyboard in Resources */,
-				B8CE86DE1538224400427053 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B8CE86DF1538224400427053 /* loadingCell.xib in Resources */,
 				B8CE86E01538224400427053 /* loadingCell_iPad.xib in Resources */,
 				B8CE86E11538224400427053 /* ATResources.bundle in Resources */,
@@ -4366,6 +4372,8 @@
 				B8B4A65415386643004D8822 /* PostView.xib in Resources */,
 				B8B4A65A1538B6AD004D8822 /* Forque.ttf in Resources */,
 				B8B4A65F1538BC24004D8822 /* refresh_icon.png in Resources */,
+				B8AC3849153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
+				B8AC384F153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4386,8 +4394,6 @@
 				B8C135791522946E00E54901 /* DonationsController.xib in Resources */,
 				B8C1357B1522946E00E54901 /* DonationsController_iPhone.xib in Resources */,
 				B8C1357C1522946E00E54901 /* InfoPlist.strings in Resources */,
-				B8C1357D1522946E00E54901 /* MainStoryboard_iPad.storyboard in Resources */,
-				B8C1357E1522946E00E54901 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B8C135801522946E00E54901 /* loadingCell.xib in Resources */,
 				B8C135811522946E00E54901 /* loadingCell_iPad.xib in Resources */,
 				B8C135831522946E00E54901 /* ATResources.bundle in Resources */,
@@ -4430,6 +4436,8 @@
 				B8B4A657153871B6004D8822 /* byoblu-Info.plist in Resources */,
 				B8B4A65B1538B6AD004D8822 /* Forque.ttf in Resources */,
 				B8B4A6601538BC24004D8822 /* refresh_icon.png in Resources */,
+				B8AC384A153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
+				B8AC3850153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4450,8 +4458,6 @@
 				B8E1B09615380B8F0040F7B9 /* DonationsController.xib in Resources */,
 				B8E1B09715380B8F0040F7B9 /* DonationsController_iPhone.xib in Resources */,
 				B8E1B09815380B8F0040F7B9 /* InfoPlist.strings in Resources */,
-				B8E1B09915380B8F0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */,
-				B8E1B09A15380B8F0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B8E1B09B15380B8F0040F7B9 /* loadingCell.xib in Resources */,
 				B8E1B09C15380B8F0040F7B9 /* loadingCell_iPad.xib in Resources */,
 				B8E1B09D15380B8F0040F7B9 /* ATResources.bundle in Resources */,
@@ -4494,6 +4500,8 @@
 				B8B4A65515386644004D8822 /* PostView.xib in Resources */,
 				B8B4A65C1538B6AD004D8822 /* Forque.ttf in Resources */,
 				B8B4A6611538BC24004D8822 /* refresh_icon.png in Resources */,
+				B8AC384B153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
+				B8AC3851153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4514,8 +4522,6 @@
 				B8E1B12F15380BAE0040F7B9 /* DonationsController.xib in Resources */,
 				B8E1B13015380BAE0040F7B9 /* DonationsController_iPhone.xib in Resources */,
 				B8E1B13115380BAE0040F7B9 /* InfoPlist.strings in Resources */,
-				B8E1B13215380BAE0040F7B9 /* MainStoryboard_iPad.storyboard in Resources */,
-				B8E1B13315380BAE0040F7B9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B8E1B13415380BAE0040F7B9 /* loadingCell.xib in Resources */,
 				B8E1B13515380BAE0040F7B9 /* loadingCell_iPad.xib in Resources */,
 				B8E1B13615380BAE0040F7B9 /* ATResources.bundle in Resources */,
@@ -4557,6 +4563,8 @@
 				B8B4A65615386645004D8822 /* PostView.xib in Resources */,
 				B8B4A65D1538B6AD004D8822 /* Forque.ttf in Resources */,
 				B8B4A6621538BC24004D8822 /* refresh_icon.png in Resources */,
+				B8AC384C153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
+				B8AC3852153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4925,22 +4933,6 @@
 			);
 			name = InfoPlist.strings;
 			path = byoblu;
-			sourceTree = "<group>";
-		};
-		B8C133FE1522946B00E54901 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8C133FF1522946B00E54901 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		B8C134001522946B00E54901 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8C134011522946B00E54901 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		B8C134BC1522946D00E54901 /* Localizable.strings */ = {

@@ -22,8 +22,8 @@ html {
 }
 body {
     font-weight: 400;
-    font-size: 23px;
-    line-height: 27px;
+    font-size: 40px;
+    line-height: 50px;
     color: #000;
     margin: 10px 13px 10px 13px;
 }
@@ -138,9 +138,9 @@ pre code {
   overflow: hidden;
 }
 .column {
-  width: 45%;
+  width: 90%;
   float: left;
-  margin-left: 35px;
+  margin-left: 5%;
 }
 
 ul {list-style-type:circle}
@@ -160,9 +160,7 @@ ul {list-style-type:circle}
     <p>Non è il blog di un personaggio politico, non è la vetrina di un uomo di spettacolo e neppure quella di un affermato giornalista. E' solo il frutto del lavoro di un cittadino qualsiasi che usa la rete per fare informazione. Informazione libera da un editore e libera e dalle correnti, al prezzo di un grande impegno quotidiano, di attrezzature molto costose e di ingenti spese.</p>
 
     <p>Il server dedicato che attualmente ospita questo blog costa 1.600€ all'anno. Un set di microfoni a collare, adeguato al servizio reso, costa 600€. Il kit di illuminazione ne costa altrettanti, una videocamera semiprofessionale costa 1500€ e ce ne vorrebbero più di una. I computer devono avere capacità di elaborazione sufficiente a produrre video di qualità in un tempo ragionevolmente breve: anche loro costano moltissimo. I software per l'editing video, le librerie di effetti e di elaborazione audio costano altre migliaia di euro. Poi le connessione alla rete, sia fissa che mobile. </p>
-  </div>
 
-  <div class="column">
 	<p>Per ogni spostamento per realizzare interviste utili se ne vanno altre centinaia di euro. Poi ci sono i software per fare le dirette streaming (Wirecast costa 400€) e, una volta pagato tutto, restano le normali spese quotidiane, perché curare un blog come questo è un lavoro a tempo pieno che non lascia spazio a niente altro.</p>
 	
     <p>Per questi motivi il tuo sostegno, mediante una donazione o mediante l'ordine di un prodotto offerto dal blog, può fare la differenza tra andare avanti o lasciar perdere.</p>
@@ -170,6 +168,8 @@ ul {list-style-type:circle}
     <p>Se vuoi aiutare l'informazione libera, scegli tra una delle modialità disponibili che trovi pubblicate qui a lato. Oppure ordina il doppio DVD "Internet for Giuliani - Quello che la tv non vi dice sui terremoti".</p>
 
     <p>Ogni piccola offerta è una goccia nel mare unica e preziosa. Grazie.</p>
+    <br/>
+    <br/>
   </div>
 </div>
 

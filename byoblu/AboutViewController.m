@@ -46,12 +46,19 @@
     
     //Parse
     NSLog(@"Parsing...");
+
     NSError *error;
-    NSString* filePath= [[NSBundle mainBundle] pathForResource:@"Claudio" ofType:@"txt"];
+    NSString* filePath;
+
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        filePath= [[NSBundle mainBundle] pathForResource:@"Claudio" ofType:@"txt"];
+    else
+        filePath= [[NSBundle mainBundle] pathForResource:@"Claudio_iPhone" ofType:@"txt"];    
+    
     HTMLContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
-    if (HTMLContent == nil) {
+    
+    if (HTMLContent == nil)
         NSLog(@"Parsing error: %@", error);
-    }
     
     webView.backgroundColor = [UIColor clearColor];
 

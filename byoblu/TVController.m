@@ -28,16 +28,16 @@
 -(void)reload {
     
     self.view.backgroundColor = [UIColor clearColor];
-    webView.hidden = 1;
+    [webView stopLoading];
     
     if (RetryTimes<MAXRETRY) {
-        webView.hidden = 1;
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        if (!webView.hidden) {
+            webView.hidden = 1;
+            [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
+        }
         [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:s]]];
-        [MBProgressHUD showHUDAddedTo:self.view animated:TRUE];
         RetryTimes++;
     } else {
-        [webView stopLoading];
         RetryTimes=0;
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     }
