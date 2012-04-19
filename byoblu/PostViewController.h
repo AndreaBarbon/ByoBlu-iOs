@@ -15,7 +15,7 @@
     IBOutlet UIWebView *webView;
     NSURL *url;
     UIBarButtonItem *btn;
-    
+    BOOL firstTime;
     BOOL up;
 
 }

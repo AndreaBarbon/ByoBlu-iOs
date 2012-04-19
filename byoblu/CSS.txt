@@ -7,6 +7,7 @@
 
 html {
   background: url('http://dl.dropbox.com/u/1089758/bg.gif') top left repeat;
+  padding: 30px;
 }
 
 </style>

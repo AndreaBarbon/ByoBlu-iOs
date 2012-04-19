@@ -105,63 +105,64 @@
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
         
-       [w stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '150%'"];         
+       [w stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '200%'"];         
+    } else {
+       [w stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '300%'"]; 
     }
     
 }
 
 -(void)adjustSize {
     
-    NSLog(@"Size adjusted");
-    
-    float w;
-    
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+    [webView setFrame:self.view.frame];
+    webView.scalesPageToFit = YES;
+
+    if (!firstTime) {
+                
+        float w;
         
-        w = MIN(self.view.frame.size.width - 20, 700);
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+            
+            w = MIN(self.view.frame.size.width - 20, self.view.frame.size.height - 20);
         
-    }else{
+        else
+            w = MIN(self.view.frame.size.width - 20, self.view.frame.size.height - 20);
+            
         
-        w = MIN(self.view.frame.size.width - 20, 300);
+        NSString *newWidth = [NSString stringWithFormat:@"width=\"100%%\"", w, w*9/16];
+        
+        NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"height=\"(.*?)\""
+                                                                               options:NSRegularExpressionCaseInsensitive
+                                                                                 error:nil];
+        
+        // Replace the matches
+        HTMLContent = [regex stringByReplacingMatchesInString:HTMLContent
+                                                      options:0
+                                                        range:NSMakeRange(0, [HTMLContent length])
+                                                 withTemplate:@""];
+        
+        
+        // Create your expression
+        regex = 
+        [NSRegularExpression regularExpressionWithPattern:@"width=\"(.*?)\""
+                                                  options:NSRegularExpressionCaseInsensitive
+                                                    error:nil];
+        
+        // Replace the matches
+        HTMLContent = [regex stringByReplacingMatchesInString:HTMLContent
+                                                      options:0
+                                                        range:NSMakeRange(0, [HTMLContent length])
+                                                 
+                                                 withTemplate:newWidth];
+        
+        
+        //NSLog(@"%@", HTMLContent);
+        [webView loadHTMLString:HTMLContent baseURL:nil];
+        firstTime = YES;
+        NSLog(@"Size adjusted");
         
     }
-    
-    
-    
-    NSString *newWidth = [NSString stringWithFormat:@"width=\"%f\" height=\"%f\"", w, w*9/16];
-    
-    [webView setFrame:self.view.frame];
-    //up=0;
-    
-    
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"height=\"(.*?)\""
-                                                                           options:NSRegularExpressionCaseInsensitive
-                                                                             error:nil];
-    
-    // Replace the matches
-    HTMLContent = [regex stringByReplacingMatchesInString:HTMLContent
-                                                  options:0
-                                                    range:NSMakeRange(0, [HTMLContent length])
-                                             withTemplate:@""];
-    
-    
-    // Create your expression
-    regex = 
-    [NSRegularExpression regularExpressionWithPattern:@"width=\"(.*?)\""
-                                              options:NSRegularExpressionCaseInsensitive
-                                                error:nil];
-    
-    // Replace the matches
-    HTMLContent = [regex stringByReplacingMatchesInString:HTMLContent
-                                                  options:0
-                                                    range:NSMakeRange(0, [HTMLContent length])
-                                             withTemplate:newWidth];
-    
-    
-    //NSLog(@"%@", HTMLContent);
-    [webView loadHTMLString:HTMLContent baseURL:nil];
 
-    //[self adjustBannerView];
     [self resizeFrame];
     
     
@@ -172,6 +173,7 @@
     if([self.adBannerView isBannerLoaded]) {
         
         if (!up) {
+            NSLog(@"It was not up, lifting");
             CGRect frame =  webView.frame;
             frame.size.height -= self.adBannerView.frame.size.height;
             webView.frame = frame;
@@ -321,8 +323,8 @@
     
     up = 0;
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    [self adjustBannerView];
     [self adjustSize];
+    [self adjustBannerView];
     
 }
 

@@ -33,6 +33,10 @@
 		B84985991536F8190032022E /* video_item.png in Resources */ = {isa = PBXBuildFile; fileRef = B84985961536F8190032022E /* video_item.png */; };
 		B8570A4514DC2D6700358D22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8570A4414DC2D6600358D22 /* QuartzCore.framework */; };
 		B879E96A153709E90085308A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B879E969153709E90085308A /* icon@2x.png */; };
+		B87C5CE215400CED00AF69BC /* Meta.txt in Resources */ = {isa = PBXBuildFile; fileRef = B87C5CE115400CED00AF69BC /* Meta.txt */; };
+		B87C5CE315400CED00AF69BC /* Meta.txt in Resources */ = {isa = PBXBuildFile; fileRef = B87C5CE115400CED00AF69BC /* Meta.txt */; };
+		B87C5CE415400CED00AF69BC /* Meta.txt in Resources */ = {isa = PBXBuildFile; fileRef = B87C5CE115400CED00AF69BC /* Meta.txt */; };
+		B87C5CE515400CED00AF69BC /* Meta.txt in Resources */ = {isa = PBXBuildFile; fileRef = B87C5CE115400CED00AF69BC /* Meta.txt */; };
 		B882962715304D7200CBADC2 /* iadControllerPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */; };
 		B882962815304FFF00CBADC2 /* TVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0ABB1524A128003D7C1B /* TVController.m */; };
 		B8A513821529BC7F00869FB2 /* TVStreaming.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8A513811529BC7F00869FB2 /* TVStreaming.txt */; };
@@ -1373,6 +1377,7 @@
 		B84985961536F8190032022E /* video_item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_item.png; sourceTree = "<group>"; };
 		B8570A4414DC2D6600358D22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B879E969153709E90085308A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		B87C5CE115400CED00AF69BC /* Meta.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Meta.txt; sourceTree = "<group>"; };
 		B882962315304BDD00CBADC2 /* iadControllerPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iadControllerPullToRefresh.m; sourceTree = "<group>"; };
 		B882962415304BDD00CBADC2 /* iadControllerPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iadControllerPullToRefresh.h; sourceTree = "<group>"; };
 		B8A513811529BC7F00869FB2 /* TVStreaming.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TVStreaming.txt; sourceTree = "<group>"; };
@@ -3005,6 +3010,7 @@
 			isa = PBXGroup;
 			children = (
 				B8C133F01522946B00E54901 /* CSS.txt */,
+				B87C5CE115400CED00AF69BC /* Meta.txt */,
 				B8C133EF1522946B00E54901 /* Claudio.txt */,
 				B8AC3848153F1D46004AE4A2 /* Claudio_iPhone.txt */,
 				B8C133F51522946B00E54901 /* Donations.txt */,
@@ -4374,6 +4380,7 @@
 				B8B4A65F1538BC24004D8822 /* refresh_icon.png in Resources */,
 				B8AC3849153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
 				B8AC384F153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
+				B87C5CE215400CED00AF69BC /* Meta.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4438,6 +4445,7 @@
 				B8B4A6601538BC24004D8822 /* refresh_icon.png in Resources */,
 				B8AC384A153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
 				B8AC3850153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
+				B87C5CE315400CED00AF69BC /* Meta.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4502,6 +4510,7 @@
 				B8B4A6611538BC24004D8822 /* refresh_icon.png in Resources */,
 				B8AC384B153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
 				B8AC3851153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
+				B87C5CE415400CED00AF69BC /* Meta.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4565,6 +4574,7 @@
 				B8B4A6621538BC24004D8822 /* refresh_icon.png in Resources */,
 				B8AC384C153F1D46004AE4A2 /* Claudio_iPhone.txt in Resources */,
 				B8AC3852153F1D6B004AE4A2 /* Donations_iPhone.txt in Resources */,
+				B87C5CE515400CED00AF69BC /* Meta.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

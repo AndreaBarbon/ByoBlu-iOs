@@ -39,7 +39,7 @@
 					<object class="IBUIWebView" id="349648782">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{768, 832}</string>
+						<string key="NSFrameSize">{768, 841}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="846720173"/>
@@ -55,7 +55,7 @@
 							<object class="IBUIButton" id="846720173">
 								<reference key="NSNextResponder" ref="675919679"/>
 								<int key="NSvFlags">266</int>
-								<string key="NSFrame">{{20, 20}, {728, 40}}</string>
+								<string key="NSFrame">{{20, 16}, {728, 40}}</string>
 								<reference key="NSSuperview" ref="675919679"/>
 								<reference key="NSWindow"/>
 								<string key="NSReuseIdentifierKey">_NS:241</string>
@@ -88,7 +88,7 @@
 								</object>
 							</object>
 						</array>
-						<string key="NSFrame">{{0, 831}, {768, 80}}</string>
+						<string key="NSFrame">{{0, 840}, {768, 71}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
